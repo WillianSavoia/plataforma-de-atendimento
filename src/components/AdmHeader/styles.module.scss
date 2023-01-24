@@ -1,16 +1,46 @@
 .header{
     margin-left: 3.5rem;
     height: 5rem;
-    background: var(--black);
     align-items: center;
-    display: flex;
+    display: fixed;
+    border-bottom: 2px solid;
+    background: var(--gray-900);
 
-    .avatar {
+  .account{
+    width: 35rem;
+    display: flex;
+    margin-left: auto;
+    margin-right: 2rem;
+    padding: 1rem;
+
+    .information{
+      margin-left: 12rem;
+
+      .name{
+        font-size: 1.1rem;
+        font-weight: bold;
+      }
+
+      .email{
+        color: var(--gray-300);
+        font-size: 0.9rem;
+      }
+    }
+  
+  
+
+    .picture{
+      margin-left: auto;
+      display: flex;
+      
+      .avatar {
         vertical-align: middle;
         width: 50px;
         height: 50px;
         border-radius: 50%;
         margin-left: auto;
-        margin-right: 2rem;
+        margin-right: 1rem;
       }
+    }
+  }
 }
