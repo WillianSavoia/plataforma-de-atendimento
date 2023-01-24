@@ -1,0 +1,126 @@
+.container{
+    margin-left: 15.5rem;
+    height: 116vh;
+
+    .content{
+
+        padding: 2.5rem;
+        height: 55rem;
+        animation: animationform 2s;
+
+        .subdomain{
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+
+            label{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }
+
+            input{
+                height: 2.5rem;
+                width: 20rem;
+                padding: 0.5rem;
+                border-radius: 5px;
+                background: var(--gray-100);
+                font-weight: bold;
+
+                transition: background 0.5s;
+
+                &:hover{
+                    background: var(--white);
+                }
+            }
+
+            .domain{
+                height: 2.5rem;
+                width: 20rem;
+                padding: 0.5rem;
+                border-radius: 5px;
+                background: var(--gray-100);
+                font-weight: bold;
+                font-size: 1rem;
+
+                transition: background 0.5s;
+
+                &:hover{
+                    background: var(--white);
+                }
+                
+                option{
+               
+                    border-radius: 5px;
+                    background: var(--gray-100);
+                    font-weight: bold;
+                    font-size: 1rem;
+                }
+            }
+
+            button{
+                height: 2.8rem;
+                width: 20rem;
+                padding: 0.5rem;
+                border-radius: 5px;
+                background: var(--gray-100);
+                margin-top: 3rem;
+
+                transition: background 0.5s;
+
+                &:hover{
+                    background: var(--white);
+                }
+            }
+        }
+
+        .domainList{
+            padding: 2rem;
+            height: 20rem;
+
+            h2{
+                margin-bottom: 2rem;
+            }
+
+            ul{
+
+                li{
+                    margin-bottom: 1.5rem;
+                    list-style: none;
+                    border-bottom: 1px solid;
+                    height: 3rem;
+                   
+
+                    .link{
+                        color: var(--white);
+                        font-size: 1.5rem;
+                        text-decoration: none;
+                        margin-right: 45rem;
+                    }
+
+                    .fButton{
+                        padding: 0.3rem;
+                    }
+
+                    button{
+                        background-color: transparent;
+                        background-repeat: no-repeat;
+                        border: none;
+                        cursor: pointer;
+                        overflow: hidden;
+                        outline: none;
+                        
+                    }
+                }
+            }
+        }
+    }
+}
+
+@keyframes animationform {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

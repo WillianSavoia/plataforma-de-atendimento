@@ -1,0 +1,47 @@
+.container{
+    margin-left: 25rem;
+    background-color: var(--black);
+    width: 60rem;
+    animation: containerAnimation 1.5s;
+    margin-top: 1rem;
+    
+    h1{
+        padding: 1rem
+    }
+    .companiesList{
+        padding: 1rem;
+      
+        div{
+            display: flex;
+        
+            ul{
+            font-size: 1.5rem;
+  
+            width: 60rem;
+            border-bottom: 1px solid;
+            
+
+            button{
+                margin-left: 45rem;
+                height: 2rem;
+                background-color: transparent;
+                background-repeat: no-repeat;
+                border: none;
+                cursor: pointer;
+                overflow: hidden;
+                outline: none;
+
+            }
+        }
+        }
+    }
+}
+
+@keyframes containerAnimation {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
