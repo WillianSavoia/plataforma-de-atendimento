@@ -1,4 +1,5 @@
 import { ActiveLink } from '../ActiveLink'
+import {useContext} from 'react'
 
 import styles from './admOptions.module.scss'
 
@@ -7,12 +8,14 @@ import { FaWhatsapp } from 'react-icons/fa'
 import {BsGear} from 'react-icons/bs'
 import {RiLockPasswordLine} from 'react-icons/ri'
 import {TbWebhook, TbTemplate} from 'react-icons/tb'
+import { ThemeContext } from '../../context/ThemeContext'
 
 
 export function AdmOptionsMenu(){
+    const {theme} = useContext(ThemeContext)
     return(
         <>
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles[theme]}`}>
         <h1><div><BsGear size={20}/></div>CONFIG</h1>
 
            <div className={styles.content}> 

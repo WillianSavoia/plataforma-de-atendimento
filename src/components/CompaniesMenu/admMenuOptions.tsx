@@ -3,6 +3,8 @@ import styles from './admMenu.module.scss'
 import {RiLockPasswordLine} from 'react-icons/ri'
 import {FaUserMinus, FaUserEdit, FaWhatsapp, FaBuilding} from 'react-icons/fa'
 import {BsFillPersonPlusFill} from 'react-icons/bs'
+import { ThemeContext } from '../../context/ThemeContext'
+import {useContext} from 'react'
 
 const empresas = [
     {nome: "Empresa 1"},
@@ -17,9 +19,11 @@ const empresas = [
 ]
 
 export function AdmOptions(){
+   const {theme} = useContext(ThemeContext)
+
     return(
         <>
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles[theme]}`}>
         <h1><div><FaBuilding size={20}/></div>EMPRESAS</h1>
 
            <div className={styles.content}> 

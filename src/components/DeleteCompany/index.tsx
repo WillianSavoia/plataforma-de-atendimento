@@ -1,5 +1,7 @@
 import styles from './styles.module.scss'
 import {BiTrash} from 'react-icons/bi'
+import { ThemeContext } from '../../context/ThemeContext'
+import {useContext} from 'react'
 
 const empresas = [
     {nome: "Empresa 1"},
@@ -15,9 +17,11 @@ const empresas = [
 
 
 export function DeleteCompanies(){
+  const {theme} = useContext(ThemeContext)
+  
     return(
         <>
-        <div className={styles.container}> 
+        <div className={`${styles.container} ${styles[theme]}`}> 
         <h1>Selecione a Empresa : </h1>
           {empresas.map(empresas => (
             <>

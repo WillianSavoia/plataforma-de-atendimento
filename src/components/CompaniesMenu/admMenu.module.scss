@@ -1,16 +1,15 @@
 .container{
-    background: var(--gray-900);
     height: 100vh;
     width: 12rem;
     position: fixed;
     flex-direction: column;
     text-align: center;
     margin-left: 3.5rem;
-    animation: MenuAnimation 1s;
+ 
    
 
     h1{
-        color: var(--gray-700);
+        color: var(--gray-100);
         margin-right: 7rem;
         margin-top: 1.8rem;
         font-weight: bold;
@@ -40,7 +39,7 @@
 
             font-size: 1rem;
             font-family: "Fjalla One", sans-serif; 
-            color: var(--gray-300);
+            color: var(--gray-100);
             text-decoration: none;
             transition: color 0.5s;
             padding: 0.5rem;
@@ -61,7 +60,7 @@
             }
 
             &.active{
-                color: var(--white);
+                color: var(--cyan-500);
                 font-weight: bold;
                 font-size: 1rem;
                 font-family: "Fjalla One", sans-serif;
@@ -91,7 +90,7 @@
             font-size: 1rem;
 
             li{
-                color: var(--gray-300);
+          
                 list-style: none;
                 padding: 0.7rem;
                 transition: color 0.5s;
@@ -110,13 +109,13 @@
 }
 }
 
-@keyframes MenuAnimation{
-    from{
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0);
-        opacity: 1;
-    }
+.dark{
+    background: var(--gray-800);
+    color: var(--snow);
 }
+
+.light{
+    background: var(--gray-300);
+    color: var(--black);
+}
+

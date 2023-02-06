@@ -1,6 +1,5 @@
 .container{
     margin-left: 25rem;
-    background-color: var(--black);
     width: 60rem;
     animation: containerAnimation 1.5s;
     margin-top: 1rem;
@@ -35,6 +34,16 @@
         }
         }
     }
+}
+
+.dark{
+    background: var(--gray-800);
+    color: var(--snow);
+}
+
+.light{
+    background: var(--gray-300);
+    color: var(--black);
 }
 
 @keyframes containerAnimation {

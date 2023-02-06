@@ -1,4 +1,5 @@
-import { useRef } from 'react'
+import { useContext } from 'react'
+import { ThemeContext } from '../../context/ThemeContext';
 import { useDropDownMenu } from '../../hooks/useDropDownMenu';
 import styles from './styles.module.scss'
 
@@ -88,10 +89,12 @@ const Empresas = [
 
 export function CompanyList (){
 
+   const {theme} = useContext(ThemeContext)
+
 
     return(
         <>
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles[theme]}`}>
          <h1>Empresas</h1>
           <nav className={styles.companyList}>
             {Empresas.map(Empresas => (

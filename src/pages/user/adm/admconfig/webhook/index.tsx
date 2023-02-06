@@ -1,15 +1,21 @@
 import { FcGlobe } from "react-icons/fc";
+import { AdmHeader } from "../../../../../components/AdmHeader";
 import { AdmOptionsMenu } from "../../../../../components/OptionsMenu/admOptions";
 import { AdmSideBar } from "../../../../../components/SideBar/admSidebar";
+import {useContext} from 'react'
 
 import styles from './styles.module.scss'
+import { ThemeContext } from "../../../../../context/ThemeContext";
 
 export default function WebhooksConfig () {
+  const {theme} = useContext(ThemeContext)
+
     return(
         <>
            <AdmSideBar />
            <AdmOptionsMenu />
-           <div className={styles.container}>
+           <AdmHeader />
+           <div className={`${styles.container} ${styles[theme]}`}>
             <div className={styles.content}>
             <h1>Configurar Webhooks</h1>
               <div className={styles.createWHbanner}>

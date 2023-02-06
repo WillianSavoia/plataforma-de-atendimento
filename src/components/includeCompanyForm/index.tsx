@@ -1,14 +1,17 @@
 import styles from './styles.module.scss'
-import {FormEvent} from 'react'
+import {FormEvent, useContext} from 'react'
+import { ThemeContext } from '../../context/ThemeContext'
 
 export function IncludeCompanyForm() {
+
+    const {theme} = useContext(ThemeContext);
     
     function handleSubmit(event: FormEvent){
         event.preventDefault()
     }
     return(
         <>
-            <div className={styles.form}>
+            <div className={`${styles.form} ${styles[theme]}`}>
             <h1>Insira os dados Abaixo</h1>
            <form className={styles.formulary} onClick={handleSubmit}>
            <div className={styles.elements}>

@@ -2,6 +2,8 @@
     height: 6rem;
     animation: animation 1s;
     display: flex;
+
+    
     
 
     .content{
@@ -27,35 +29,46 @@
             padding: 0.5rem;
             font-size: 1.2rem;
             font-family: "Fjalla One", sans-serif; 
-            color: var(--gray-300);
+            color: var(--gray-500);
             text-decoration: none;
             transition: color 0.5s;
+
+    
 
             & + a{
                 margin-left: 2rem;
             }
 
             &:hover{
-                color: var(--white);
+                color: var(--black);
             }
 
             &.active{
-                color: var(--white);
+                color: var(--cyan-500);
                 font-weight: bold;
                 padding: 0.5rem;
                 font-size: 1.2rem;
                 font-family: "Fjalla One", sans-serif;
                 text-decoration: none;
             }
+
+    
+            
+        
+            
             
            }
 
            
-      
+           
         }
 
+
+
+        
     }
 }
+
 
 @keyframes animation{
     from{
