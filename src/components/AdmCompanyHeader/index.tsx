@@ -6,7 +6,7 @@ import { ThemeContext } from '../../context/ThemeContext'
 import { useContext } from 'react'
 import { SwitchInput } from '../SwitchMode'
 
-export function AdmHeader () {
+export function AdmCompanyHeader () {
     const {theme} = useContext(ThemeContext)
     return(
         <>

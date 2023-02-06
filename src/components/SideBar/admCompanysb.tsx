@@ -1,17 +1,21 @@
 import { ActiveLink } from '../ActiveLink'
 import styles from './admCompany.module.scss'
-import {MdPersonAddAlt1} from 'react-icons/md'
-import {BsFillPeopleFill} from 'react-icons/bs'
+
 import {RiLockPasswordLine, RiDashboardLine} from 'react-icons/ri'
-import {FaUserMinus, FaUserEdit, FaChartBar} from 'react-icons/fa'
-import { GoGear } from 'react-icons/go'
+
 import {HiUserGroup} from 'react-icons/hi'
+import { ThemeContext } from '../../context/ThemeContext'
+
+import {useContext} from 'react'
 
 
 export function AdmCompanySideBar(){
+     
+    const {theme} = useContext(ThemeContext)
+
     return(
         <>
-        <div className={styles.container}>
+        <div className={`${styles.container} ${styles[theme]}`}>
            <h1>logo</h1>
 
         

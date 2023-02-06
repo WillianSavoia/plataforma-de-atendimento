@@ -90,6 +90,10 @@
     }
 }
 
+.dark{
+    background: var(--gray-900);
+    color: var(--snow);
+}
 @keyframes animationform {
     from{
         opacity: 0;

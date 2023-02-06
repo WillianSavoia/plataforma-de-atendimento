@@ -1,10 +1,14 @@
-import { FormEvent } from "react";
+import { FormEvent, useContext } from "react";
+import { AdmHeader } from "../../../../../components/AdmHeader";
 import { AdmOptionsMenu } from "../../../../../components/OptionsMenu/admOptions";
 import { AdmSideBar } from "../../../../../components/SideBar/admSidebar";
+import { ThemeContext } from "../../../../../context/ThemeContext";
 
 import styles from './styles.module.scss'
 
 export default function WhatsAppConfig(){
+
+  const {theme} = useContext(ThemeContext)
 
     function handleSubmit(event: FormEvent){
        event.preventDefault()
@@ -14,7 +18,8 @@ export default function WhatsAppConfig(){
         <>
         <AdmSideBar />
         <AdmOptionsMenu />
-        <div className={styles.container}>
+        <AdmHeader />
+        <div className={`${styles.container} ${styles[theme]}`}>
             <div className={styles.content}>
               <form className={styles.whatsappform} onSubmit={handleSubmit}>
               <h1>Novo Cadastro</h1>

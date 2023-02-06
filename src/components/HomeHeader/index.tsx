@@ -1,13 +1,19 @@
 import Link from 'next/link';
+import { useContext } from 'react';
+import { ThemeContext } from '../../context/ThemeContext';
 import { ActiveLink } from '../ActiveLink';
+import { SwitchInput } from '../SwitchMode';
 import styles from './styles.module.scss';
 
 export function Header(){
+  const {theme} = useContext(ThemeContext)
     return(
         <>
-        <header className={styles.container}>
+        <div>
+        <header className={`${styles.container} ${styles[theme]}`}>
             <div className={styles.content}>
             <h1 className={styles.title}>Plataforma de Atendimento</h1>
+            <div><SwitchInput /></div>
               <div className={styles.links}>
               <ActiveLink activeClassName={styles.active} href="/">
                 <a>Home</a>
@@ -24,6 +30,7 @@ export function Header(){
               </div>
             </div>
         </header>
+        </div>
         </>
     )
 }

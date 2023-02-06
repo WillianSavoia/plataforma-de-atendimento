@@ -43,6 +43,11 @@
     }
 }
 
+.dark{
+    background: var(--gray-900);
+    color: var(--snow);
+}
+
 @keyframes animationbanner {
     from{
         opacity: 0;

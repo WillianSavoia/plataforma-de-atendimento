@@ -1,32 +1,11 @@
 .container{
-    margin-left: 3.5rem;
-    height: 100vh;
+    height: 105rem;
+}
 
+.dark{
+    background: var(--gray-800);
+}
 
-    h1{
-        padding: 2rem;
-        margin-left: 1rem;
-        width: 10rem;
-    }
-
-    .content{
-        padding: 3rem;
-        height: 40rem;
-
-        .total{
-            background: var(--gray-900);
-            height: 8rem;
-            width: 25rem;
-            align-items: center;
-            text-align: center;
-            padding: 2rem;
-            border-radius: 8px;
-
-            span{
-                font-weight: bold;
-                font-size: 1.2rem;
-            }
-        }
-        
-    }
+.light{
+    background: var(--snow);
 }

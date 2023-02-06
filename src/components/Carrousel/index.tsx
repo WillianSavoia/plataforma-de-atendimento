@@ -1,7 +1,8 @@
 import styles from './styles.module.scss';
 import { AiOutlineLeftCircle, AiOutlineRightCircle } from 'react-icons/ai'
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { GetStaticProps } from 'next';
+import { ThemeContext } from '../../context/ThemeContext';
 
 type Post = {
     title: string;
@@ -13,9 +14,10 @@ interface CarrouselProps {
 }
 
 export function Carrousel (){
+    const {theme} = useContext(ThemeContext)
         return (
         <>
-        <div className={styles.carrousel}>
+        <div className={`${styles.carrousel} ${styles[theme]}`}>
         <div className={styles.moveArrows}>
             <div className={styles.left}>
             <AiOutlineLeftCircle size={30}/>
@@ -35,6 +37,8 @@ export function Carrousel (){
         
         
         </div>
+     
+        
         </>
     )
 }
@@ -63,6 +67,7 @@ export const getStaticProps: GetStaticProps = async () =>{
             content
         }
     }
+        
 }
 
 //Terminar o Carrossel

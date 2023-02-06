@@ -6,16 +6,20 @@
 
 :root{
     --white: #ffffff;
+    --snow: #fffafa;
     --black: #000;
 
     --gray-100: #e1e1e6;
     --gray-300: #a8a8b3;
+    --gray-500: #9E9E9E;
     --gray-700: #323238;
     --gray-900: #121214;
     --gray-800: #29292e;
     --gray-850: #1a2729;
     --yellow-500: #eba417;
     --cyan-500: #61dafb;
+    --DeepSkyBlue: #00bfff;
+    --blue: #0000ff;
 }
 
 @media (max-width: 1080px){
@@ -31,7 +35,21 @@
 }
 
 body{
-    background: var(--gray-800);
     font-family: "Poppins", sans-serif;
-    color: var(--white)
+   
+    
 }
+
+.dark{
+    background: var(--gray-800);
+    color: var(--white);
+    
+
+}
+
+.light{
+    background: var(--snow);
+    color: var(--black);
+}
+
+

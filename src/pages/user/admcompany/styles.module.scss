@@ -1,14 +1,13 @@
 .container{
-    margin-left: 15.5rem;
     height: 100vh;
 }
 
 .dark{
-    background: var(--gray-900);
+    background: var(--gray-900) ;
     color: var(--snow);
 }
 
 .light{
     background: var(--snow);
-    color: var(--black);
+    color: var(--black)
 }
