@@ -1,0 +1,15 @@
+.container{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.light{
+    background: var(--snow);
+    color: var(--black);
+}
+
+.dark{
+    background: var(--gray-900);
+    color: var(--snow);
+}

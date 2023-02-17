@@ -18,7 +18,7 @@
         a{
 
             
-            color: var(--gray-100);
+            color: var(--gray-50);
             transition: color 0.5s;
             margin-left: 0.7rem;
             margin-top: 1rem;
@@ -32,12 +32,6 @@
             
             &:hover{
                 color: var(--white);
-            }
-
-            &.active{
-                background-color: var(--white);
-              
-                
             }
             
            }

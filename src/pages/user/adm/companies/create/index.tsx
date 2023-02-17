@@ -7,11 +7,17 @@ import { AdmHeader } from "../../../../../components/AdmHeader";
 import { useContext } from "react";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 
+import Head from "next/head";
+
 export default function CompaniesPage(){
     const {theme} = useContext(ThemeContext)
 
     return( 
         <>
+
+           <Head>
+            <title>Empresas | Cadastrar</title>
+           </Head>
        
         <div className={`${styles.container} ${styles[theme]}`}>
         <AdmHeader />

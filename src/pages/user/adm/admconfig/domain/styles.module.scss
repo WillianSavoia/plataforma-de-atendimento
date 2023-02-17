@@ -1,6 +1,7 @@
 .container{
     margin-left: 15.5rem;
     height: 118vh;
+    display: flex;
 
     .content{
 
@@ -88,6 +89,9 @@
                     list-style: none;
                     border-bottom: 1px solid;
                     height: 3rem;
+                    display: flex;
+                    
+                  
                    
 
                     .link{
@@ -122,6 +126,7 @@
 }
 
 .light{
+    background: var(--snow);
     color: var(--black);
 }
 @keyframes animationform {

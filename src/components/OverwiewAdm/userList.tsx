@@ -59,10 +59,10 @@ export function UserList() {
 
     return (
         <>
-        <div className={`${styles.container} ${styles[theme]}`}>
+        <div className={styles.container}>
             {users.map(users => (
                 <>
-                <li>
+                <li className={`${styles[theme]}`}>
                     <Link href="#" className={styles.users}>{users.usuário}</Link>
                     <span >{users.empresa}</span>
                     <span >{users.whatsApp}</span>
@@ -74,4 +74,3 @@ export function UserList() {
     )
 }
 
-//Redirecionar Para o Usuário escolhido, onde terá mais informações sobre ele.

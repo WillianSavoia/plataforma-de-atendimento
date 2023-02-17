@@ -4,6 +4,8 @@ import { ThemeContext } from "../../../context/ThemeContext"
 
 import {useContext} from 'react'
 
+import Head from "next/head"
+
 import styles from './styles.module.scss'
 
 export default function AdmCompanyPage() {
@@ -12,6 +14,11 @@ export default function AdmCompanyPage() {
 
     return(
         <>
+
+           <Head>
+            <title>Adm Company</title>
+           </Head>
+
         <div className={`${styles.container} ${styles[theme]}`}>
         <AdmCompanySideBar />
         <AdmCompanyHeader />

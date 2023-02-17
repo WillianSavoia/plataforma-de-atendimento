@@ -2,14 +2,14 @@
     margin-left: 3.5rem;
     height: 5rem;
     align-items: center;
-    display: fixed;
+    display: flex;
   
 
   .account{
     
     display: flex;
     margin-left: auto;
-    margin-right: 5rem;
+
     padding: 1rem;
 
     .switch{
@@ -21,6 +21,7 @@
 
     .information{
       margin-left: 1rem;
+      margin-right: 1rem;
 
 
       .name{

@@ -2,7 +2,7 @@
     margin-left: 3.5rem;
     height: 5rem;
     align-items: center;
-    display: fixed;
+    display: flex;
   
 
   .account{
@@ -21,6 +21,7 @@
 
     .information{
       margin-left: 1rem;
+      margin-right: 1rem;
 
 
       .name{

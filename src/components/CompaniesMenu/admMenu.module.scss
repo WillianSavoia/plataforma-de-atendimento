@@ -70,7 +70,7 @@
            }
 
            span{
-            color: var(--gray-700);
+         
             width: 13rem;
             margin-right: 7rem;
             font-weight: bold;
@@ -89,17 +89,27 @@
             font-family: "Fjalla One", sans-serif;
             font-size: 1rem;
 
+            
+
             li{
           
                 list-style: none;
                 padding: 0.7rem;
                 transition: color 0.5s;
                 cursor: pointer;
-                
-                &:hover{
-                    color: var(--white);
+
+                transition:  scale  .3s;
+        
+       
+       
+                &:not(:hover) {
+                    opacity: .8;
+                    scale: .98;
+                    
                 }
-    
+        
+                
+                
     
                 
             }

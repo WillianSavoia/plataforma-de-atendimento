@@ -4,6 +4,8 @@ import { AdmOptionsMenu } from "../../../../../components/OptionsMenu/admOptions
 import { AdmSideBar } from "../../../../../components/SideBar/admSidebar";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 
+import Head from "next/head";
+
 import styles from './styles.module.scss'
 
 export default function WhatsAppConfig(){
@@ -16,6 +18,10 @@ export default function WhatsAppConfig(){
 
     return(
         <>
+
+           <Head>
+            <title>Config | Whatsapp</title>
+           </Head>
         <AdmSideBar />
         <AdmOptionsMenu />
         <AdmHeader />

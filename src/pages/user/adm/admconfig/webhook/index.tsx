@@ -7,11 +7,18 @@ import {useContext} from 'react'
 import styles from './styles.module.scss'
 import { ThemeContext } from "../../../../../context/ThemeContext";
 
+import Head from "next/head";
+
 export default function WebhooksConfig () {
   const {theme} = useContext(ThemeContext)
 
     return(
         <>
+
+           <Head>
+            <title>Config | Webhooks</title>
+           </Head>
+
            <AdmSideBar />
            <AdmOptionsMenu />
            <AdmHeader />

@@ -8,6 +8,8 @@ import { BiTrash } from "react-icons/bi";
 import { AdmHeader } from "../../../../../components/AdmHeader";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 
+import Head from "next/head";
+
 export default function SubDomain () {
     const {theme} = useContext(ThemeContext)
     
@@ -17,6 +19,11 @@ export default function SubDomain () {
 
     return(
         <>
+
+           <Head>
+            <title>Config | Subdomínio</title>
+           </Head>
+
             <AdmSideBar />
             <AdmOptionsMenu />
             <AdmHeader />

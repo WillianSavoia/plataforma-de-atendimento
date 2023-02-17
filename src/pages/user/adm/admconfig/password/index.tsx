@@ -6,6 +6,8 @@ import { ThemeContext } from "../../../../../context/ThemeContext";
 
 import styles from './styles.module.scss'
 
+import Head from "next/head";
+
 export default function PasswordConfig (){
 
   const {theme} = useContext(ThemeContext)
@@ -18,6 +20,11 @@ export default function PasswordConfig (){
     return(
 
         <>
+
+           <Head>
+            <title>Config | Alterar senha</title>
+           </Head>
+
           <AdmSideBar />
           <AdmOptionsMenu />
           <AdmHeader />

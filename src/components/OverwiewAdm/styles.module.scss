@@ -9,12 +9,11 @@
     h1{
         padding: 2rem;
         margin-left: 1rem;
-        width: 10rem;
+        background: transparent;
     }
 
     .content{
         padding: 3rem;
-        height: 40rem;
         display: flex;
         
         flex-direction: column;
@@ -23,21 +22,31 @@
 
         .statistics{
             display: flex;
-             
-            height: 12rem;
-            border-radius: 15px;
             padding: 1rem;
+            margin-left: 2rem;
 
         
 
         .total{
            
-            height: 10rem;
-            width: 20rem;
-            align-items: center;
-            text-align: left;
-            padding-right: 0.5rem;
-            border-right: 4px solid;
+            margin-left: 1rem;
+            flex-direction: column;
+            border-radius: 10px ;
+            width: 23rem;
+            height: 13rem;
+            padding: 1rem;
+            text-align: center;
+
+            transition:  scale  .5s;
+        
+       
+       
+            &:not(:hover) {
+                opacity: .8;
+                scale: .98;
+                
+            }
+    
 
             h2{
                 margin-top: 1rem;
@@ -57,14 +66,24 @@
 
         .Active{
       
-            height: 10rem;
-            width: 20rem;
-            align-items: center;
-            text-align: left;
-            padding-right: 0.5rem;
-            border-right: 4px solid;
-            padding-left: 1rem;
-            
+            margin-left: 1rem;
+            flex-direction: column;
+            border-radius: 10px ;
+            width: 23rem;
+            height: 13rem;
+            padding: 1rem;
+            text-align: center;
+
+            transition:  scale  .5s;
+        
+       
+       
+            &:not(:hover) {
+                opacity: .8;
+                scale: .98;
+                
+            }
+    
 
 
             span{
@@ -83,13 +102,24 @@
 
         .Inactive{ 
       
-            height: 10rem;
-            width: 20rem;
-            align-items: center;
-            text-align: left;
-            padding-right: 0.5rem;
-            border-right: 4px solid;
-            padding-left: 1rem;
+            margin-left: 1rem;
+            flex-direction: column;
+            border-radius: 10px ;
+            width: 23rem;
+            height: 13rem;
+            padding: 1rem;
+            text-align: center;
+
+            transition:  scale  .5s;
+        
+       
+       
+            &:not(:hover) {
+                opacity: .8;
+                scale: .98;
+                
+            }
+    
 
 
             span{
@@ -108,12 +138,24 @@
 
         .Confirmation{
            
-            height: 10rem;
-            width: 20rem;
-            align-items: center;
-            text-align: left;
-            padding-left: 1rem;
+            margin-left: 1rem;
+            flex-direction: column;
+            border-radius: 10px ;
+            width: 23rem;
+            height: 13rem;
+            padding: 1rem;
+            text-align: center;
+
+            transition:  scale  .5s;
         
+       
+       
+            &:not(:hover) {
+                opacity: .8;
+                scale: .98;
+                
+            }
+    
 
 
 
@@ -136,17 +178,22 @@
         .usersList{
             margin-top: 2rem;
             height: 70rem;
+
+            h2{
+                background: transparent;
+            }
         }
     }
 }
 
 .light{
     background: var(--gray-300);
+    color: var(--black);
 
 }
 
 .dark{
-    background: var(--gray-900);
+    background: var(--gray-800);
     color: var(--snow);
 }
 

@@ -94,6 +94,10 @@
     background: var(--gray-900);
     color: var(--snow);
 }
+
+.light{
+    background: var(--snow);
+}
 @keyframes animationform {
     from{
         opacity: 0;
