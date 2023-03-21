@@ -1,5 +1,5 @@
 import Modal from 'react-modal';
-import { FormEvent, useState } from 'react';
+import { useState } from 'react';
 
 import {BiTrash} from 'react-icons/bi';
 
@@ -11,9 +11,7 @@ export function DeleteCollaboratorModal() {
 
   
    
-    function HandleSubmit (event: FormEvent){
-        event.preventDefault();
-    }
+
 
     return(
         <>

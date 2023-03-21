@@ -1,0 +1,13 @@
+.container{
+    height: 100vh;
+}
+
+.light{
+    background: var(--snow);
+    color: var(--black);
+}
+
+.dark{
+    background: var(--gray-900);
+    color: var(--snow);
+}

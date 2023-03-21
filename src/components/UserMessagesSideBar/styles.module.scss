@@ -1,0 +1,91 @@
+.container{
+    
+    margin-left: 20.4rem;
+    width: 23rem;
+ 
+    height: 100vh;
+    position: fixed;
+ 
+
+    .content{
+      
+        flex-direction: column;
+        display: flexbox;
+        
+        
+        
+
+        h1{
+            font-size: 1.2rem;
+            margin-left: 5rem;
+            margin-top: 1.5rem;
+        }
+
+        .input{
+            background: var(--gray-100);
+            width: 20rem;
+            height: 2.5rem;
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+            border-radius: 8px;
+            align-items: center;
+            display: flex;
+            margin-bottom: 2rem;
+         
+    
+    
+            input{
+                border:0 none;
+                width: 17.5rem;
+                margin-left: 0.5rem;
+                height: 1.5rem;
+                box-shadow: 0 0 0 0;
+                outline: 0;
+                padding: 1rem;
+                background: var(--gray-100);
+         
+         
+           
+                
+                &::placeholder{
+                    font-weight: bold;
+                }
+
+            }
+
+                .svg{
+                cursor: pointer;
+                color: var(--black);
+             }
+        }
+    }
+}
+
+.messages{
+    flex:1;
+    overflow-y: auto;
+    height: 50rem;
+  
+    &::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+        
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: rgba(0, 0, 0, 0.2);
+        opacity: 20%;
+    }
+
+}
+
+
+.light{
+    background: var(--gray-50);
+    color: var(--black);
+}
+
+.dark{
+    background: var(--gray-850);
+    color: var(--snow);
+}

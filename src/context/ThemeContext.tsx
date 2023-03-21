@@ -1,7 +1,7 @@
-import { createContext, useState, ReactNode } from "react";
+import { createContext, useState, ReactElement } from "react";
 
 interface ThemeProviderProps{
-    children: ReactNode;
+    children: ReactElement;
 }
 
 export const ThemeContext = createContext<any>({theme: 'light', undefined})
