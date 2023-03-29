@@ -6,6 +6,7 @@ import {useContext} from 'react';
 import { AdmCompanySideBar } from '../../../../../components/SideBar/admCompanysb';
 import { AdmBoxMessages } from '../../../../../components/AdmBoxMessages';
 import { UserMessagesSideBar } from '../../../../../components/UserMessagesSideBar';
+import Head from 'next/head';
 
 
 export default function ConversationPage(){
@@ -13,10 +14,15 @@ export default function ConversationPage(){
 
     return(
         <>
+          <Head>
+            <title>Chat | Conversas em aberto</title>
+           </Head>
+        
+        
         <div className={`${styles.container} ${styles[theme]}`}>
             <AdmCompanySideBar />
             <AdmBoxMessages />
-            <UserMessagesSideBar />
+            <UserMessagesSideBar chatId={undefined} />
         </div>
         </>
     )

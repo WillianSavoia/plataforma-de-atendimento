@@ -65,7 +65,7 @@ export function AdmStatics () {
             <div className={styles.content}>
              {
                 numbers.map(numbers => (
-                        <div key={numbers.expiração_de_assinatura}>
+                        <div  className={styles.statistics} key={numbers.expiração_de_assinatura}>
                         <div  className={`${styles.total} ${styles[theme]}`}>
                     <h2>Conversas Totais: </h2>
                     <span>{numbers.conversas_totais}</span>

@@ -23,7 +23,7 @@ export function AdmCompanySideBar(){
            <ActiveLink href="/user/admcompany/dashboard" activeClassName={styles.active}><a><RiDashboardLine size={30}/></a></ActiveLink>
            <ActiveLink href="/user/admcompany/collaborator/create" activeClassName={styles.active}><a><HiUserGroup size={30}/> </a></ActiveLink>
            <ActiveLink href="/user/admcompany/collaborator/conversation" activeClassName={styles.active}><a><BiConversation size={30}/> </a></ActiveLink>
-           <ActiveLink href="/user/admcompany/change-password" activeClassName={styles.active}><a><RiLockPasswordLine size={30}/></a></ActiveLink>
+           <ActiveLink href="/user/admcompany/password" activeClassName={styles.active}><a><RiLockPasswordLine size={30}/></a></ActiveLink>
          
        
         </div>

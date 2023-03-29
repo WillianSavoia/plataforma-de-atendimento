@@ -1,6 +1,7 @@
 import { ThemeContext } from '../../../context/ThemeContext';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import styles from './styles.module.scss'
+import EmojiPicker from 'emoji-picker-react';
 
 interface MessageProps {
     data: {
@@ -18,17 +19,26 @@ interface MessageProps {
 
 export function Messages ({data, user}: MessageProps) {
 
+ 
+
     const {theme} = useContext(ThemeContext);
     return(
-        <div className={styles.chatBox}
+
+      
+   
+        <div className={`${styles.chatBox1} ${styles[theme]}`}
+          style={{
+            marginLeft: user.id === data.author ? ' auto' : '0',
+            background: user.id === data.author ? 'var(--green-whatsapp)' : '',
+            color: user.id === data.author ? 'var(--black)' : '',
+          }}
         >
-              <div className={`${styles.chatBox1} ${styles[theme]}`}
-             style={{
-              marginLeft: user.id === data.author ? ' auto' : '0',
-             }}
-              >
-                <p>{data.message}</p>
-              </div>
-             </div>
+          <p>{data.message}</p>
+        </div>
+
+
+   
+      
+    
     )
 }

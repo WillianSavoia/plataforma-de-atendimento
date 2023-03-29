@@ -1,0 +1,145 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem;
+    width: 100%;
+    
+  
+    
+
+
+
+    .info{
+        display: flex;
+        width: 100%;
+        
+        
+        
+        
+        .picture{
+            display: flex;
+            margin-left: 1rem;
+            margin-top: 0.8rem;
+            
+            .avatar {
+                vertical-align: middle;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                margin-left: auto;
+                margin-right: 1rem;
+            }
+        }
+        .openModal{
+            flex-direction: column;
+            display: flex;
+            cursor: pointer;
+          
+        
+        h2{
+            margin-left: 0.5rem;
+            margin-top: 0.5rem;
+            } 
+        
+            
+           
+            span{
+                
+                margin-left: .6rem;
+                margin-top: .2rem;
+                font-size: 0.8rem;
+                opacity: 0.5;
+            }
+        }
+    }
+}
+
+.Modal{
+    animation: ModalAnimation .6s;
+    height: 40%;
+    width: 50%;
+    padding: 2rem;
+    margin-left: 30%;
+    margin-top: 15%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+
+    .header{
+        display: flex;
+        width: 100%;
+         
+        .svg{
+            margin-left: auto;
+            margin-top: 1%;
+            cursor: pointer;
+        }
+    }
+
+    .modalInfo{
+
+        display: flex;
+        margin-top: 1%;
+        border: 2px solid;
+        border-radius: 10px;
+       
+       
+        span{
+                
+            font-size: 1.1rem;
+        }
+    
+        
+        
+        
+        .avatar {
+            vertical-align: middle;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-left: 1rem;
+            margin-right: 1rem;
+            margin-top: 1rem;
+        }
+
+        .userInfo{
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.2rem;
+
+            .cpf{
+                font-size: 1.1rem;
+            }
+        }
+
+        .othersInfo{
+            display: flex;
+            flex-direction: column;
+            padding: 2rem;
+        
+            margin-left: 2rem;
+        }
+    }
+
+
+}
+
+@keyframes ModalAnimation {
+    from{
+      opacity: 0;
+    }
+    to{
+      opacity: 1;
+    }
+    
+}
+
+.dark{
+    background: var(--gray-800);
+    color: var(--snow);
+}
+
+.light{
+    background: var(--gray-300);
+    color: var(--black);
+}

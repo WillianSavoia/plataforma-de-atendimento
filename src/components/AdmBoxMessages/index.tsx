@@ -3,6 +3,7 @@ import { ThemeContext } from '../../context/ThemeContext'
 import { ActiveLink } from '../ActiveLink'
 import styles from './styles.module.scss'
 import {HiOutlineMagnifyingGlass} from 'react-icons/hi2'
+import { SwitchInput } from '../SwitchMode'
 
 
 
@@ -35,8 +36,7 @@ export function AdmBoxMessages () {
             <span>Caixa de entrada</span>
             <div className={styles.division1}>
             <ActiveLink href="/user/admcompany/collaborator/conversation" activeClassName={styles.active}><a>Conversa em Aberto</a></ActiveLink>
-            <ActiveLink href="#" activeClassName={styles.active}><a>Conversas Encerradas</a></ActiveLink>
-            <ActiveLink href="#" activeClassName={styles.active}><a>Conversas Em Espera</a></ActiveLink>
+            <ActiveLink href="/user/admcompany/collaborator/conversation/closedchat" activeClassName={styles.active}><a>Conversas Encerradas</a></ActiveLink>
             </div>
             <div className={styles.input}>
                 <input type="text"
@@ -45,16 +45,16 @@ export function AdmBoxMessages () {
                 placeholder="Pesquisar Membro"/>
                     <HiOutlineMagnifyingGlass size={20} className={styles.svg}/>
                 </div>
-            <div className={styles.members}>
-                {Filter.map(Members => (
-                    <div className={styles.division2} key={Members}>
+                <div className={styles.members}>
+                    {Filter.map(Members => (
+                        <div className={styles.division2} key={Members}>
 
-                        <ul>
-                            <li>{Members}</li>
-                        </ul>
-                    </div>
-                ))}
-            </div>
+                            <ul>
+                                <li>{Members}</li>
+                            </ul>
+                        </div>
+                    ))}
+                </div>
         </div>
        
         </>

@@ -1,0 +1,59 @@
+.Modal{
+    height: 30%;
+    width: 40%;
+    align-items: center;
+    text-align: center;
+    margin-top: 15%;
+    margin-left: 30%;
+    padding: 1rem;
+    border-radius: 20px;
+    animation: ModalAnimation .5s;
+
+    span{
+        font-weight: bold;
+        font-size: 1.4rem;
+    }
+
+    p{
+        margin-top: 2rem;
+    }
+
+    button{
+        margin-top: 11%;
+        height: 2.5rem;
+        width: 20%;
+        border-radius: 10px;
+        background: var(--gray-100);
+        transition: background .7s;
+        cursor: pointer;
+        
+
+        &:hover{
+            background: var(--gray-300);
+        }
+    }
+
+    .btn{
+        margin-right: 5%;
+    }
+}
+
+.dark{
+    background: var(--gray-900);
+    color: var(--white);
+}
+
+.light{
+    background: var(--gray-300);
+    color: var(--black);
+}
+
+@keyframes ModalAnimation {
+    from{
+       opacity: 0;
+    }
+    to{
+       opacity: 1;
+    }
+    
+}

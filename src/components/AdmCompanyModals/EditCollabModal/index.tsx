@@ -3,7 +3,7 @@ import { FormEvent, useState } from 'react';
 
 import {FiEdit2} from 'react-icons/fi';
 
-import styles from './EditCollabModal.module.scss';
+import styles from './styles.module.scss';
 
 
 export function EditCollaboratorModal() {

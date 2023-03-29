@@ -3,8 +3,21 @@
     margin-left: 3.5rem;
     height: 100%;
     width: 17rem;
-
+    overflow-x: hidden;
+    overflow-y: auto;
+    
     padding: 2rem;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 6px;
+        
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: rgba(0, 0, 0, 0.2);
+        opacity: 20%;
+    }
  
     
     
@@ -19,7 +32,7 @@
         flex-direction: column;
         margin-top: 2.6rem;
         border-bottom: 1px solid;
-        height: 12rem;
+        height: 20%;
 
         a{
 
@@ -46,7 +59,7 @@
             &.active{
                 color: var(--cyan-500);
               
-                font-size: 1.2rem;
+                
               
             }
 
@@ -100,6 +113,8 @@
 
     .division2{
         margin-top: 2rem;
+        height: 100%;
+        
 
 
         ul{

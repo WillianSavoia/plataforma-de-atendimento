@@ -1,0 +1,33 @@
+.messagesBox{
+    
+    flex: 1;
+
+    display: flex;
+    margin-bottom: 15px;
+    
+    flex-direction: column;
+    
+    
+    padding: 2rem;
+    
+
+   
+
+
+    overflow-y: auto;
+    
+    
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 6px;
+        
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: rgba(0, 0, 0, 0.803);
+        
+    }  
+
+    
+    
+  }

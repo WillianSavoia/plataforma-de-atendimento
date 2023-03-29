@@ -1,0 +1,120 @@
+.userHeader{
+        display: flex;
+        padding: 0.5rem;
+        width: 100%;
+        
+        border-bottom: 1px solid;
+
+        .switch{
+            display: flex;
+            margin-right: 1rem;
+            height: 2rem;
+
+            .svgSwitch{
+                margin-top: .1rem;
+                margin-left: .1rem;
+                margin-right: .1rem;
+            }
+        }
+        
+      .btns{
+        display: flex;
+        margin-top: .5rem;
+        margin-left: 2rem;
+          
+        .svg{
+        
+            margin-top: 3.5%;
+        
+            margin-right: 1%;
+
+            transition: color .5s;
+            cursor: pointer;
+
+            &:hover{
+                color: var(--cyan-500);
+            }
+            
+
+            
+        }
+
+        
+ 
+
+        .checkedBtn{
+            margin-top: 3.5%;
+            transition: color .5s;
+            cursor: pointer;
+
+            &:hover{
+                color: var(--green);
+            }   
+        }
+      }
+
+       
+    
+    }        
+    
+    .attachment{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-left: 30%;
+        margin-top: 5.5%;
+        height: 30%;
+        width: 20%;
+        background: var(--primary);
+        opacity: .8;
+        border-radius: 20px;
+        padding: .5rem;
+        animation: MenuAnimation .8s;
+    
+        .menuHeader{
+            display: flex;
+            border-bottom: 2px solid;
+    
+            h2{
+                margin-left: .5rem;
+            }
+            
+    
+            .svg{
+                margin-left: auto;
+                margin-right: 10%;
+                margin-top: .8rem;
+                cursor: pointer;
+            }
+        }
+        
+        .icons{
+            display: flex;
+            
+            height: 90%;
+            padding: 1rem;
+        }
+    }
+
+
+
+
+
+.dark{
+    background: var(--black);
+    color: var(--snow);
+}
+
+.light{
+    background: var(--gray-300);
+    color: var(--black);
+}
+
+@keyframes MenuAnimation {
+    from{
+       opacity: 0;
+    }
+    to{
+       opacity: .8;
+    }
+}

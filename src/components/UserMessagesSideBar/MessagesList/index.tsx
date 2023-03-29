@@ -2,10 +2,15 @@
 import styles from './styles.module.scss'
 
 interface MessageListProps {
-  active: boolean;
+  active?: boolean;
   onClick: () => void;
-  data: any;
-  
+  data: {
+    chatId: number;
+    name: string;
+    author: string;
+    message: string;
+    avatar: string;
+  };
 }
 
 export function MessagesList ({onClick, active, data}: MessageListProps) {

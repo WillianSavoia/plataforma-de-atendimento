@@ -1,64 +1,55 @@
 .container{
+  
+    
     height: 100%;
-    max-width: 100%;
-    
-    margin-left: 44rem;
-    display: flex;
-    padding: 1rem;
-    
-
-
-   .chat{
-    display: flex;
-    flex-direction: column;
     width: 100%;
- 
-
-    .userHeader{
-        display: flex;
-        flex-direction: column;
-        padding: 0.5rem;
-        width: 100%;
-        border-bottom: 1px solid;
-        
- 
-
-
-        .info{
-            display: flex;
-            cursor: pointer;
-            width: 50%;
-            
-            
-        .picture{
-            display: flex;
-            margin-left: 1rem;
-            margin-top: 0.5rem;
-            
-            .avatar {
-              vertical-align: middle;
-              width: 50px;
-              height: 50px;
-              border-radius: 50%;
-              margin-left: auto;
-              margin-right: 1rem;
-            }
-           }
-
-           h2{
-              margin-left: 0.5rem;
-              margin-top: 0.5rem;
-            } 
-
-        }
-
-        span{
-            margin-left: 5.5rem;
-            margin-top: -0.8rem;
-            font-size: 0.8rem;
-            opacity: 0.5;
-        }
+    display: flex;
     
+    
+
+    flex-direction: column;
+
+   
+    
+    
+
+  
+    
+    
+    
+    
+    .header{
+        
+        
+        width: 100%;
+        
+    
+    
+        display: flex;
+        
+        
+   
+
+    }
+
+    
+
+
+ 
+
+    
+
+    
+
+    .emojiArea{
+
+        
+       
+        overflow-y: hidden;
+        transition: all ease 0.3s;
+        max-height: 16rem;
+        
+
     }
 
     .inputTextArea{
@@ -66,14 +57,40 @@
         height: 5rem;
         padding: 1.5rem;
         border-top: 1px solid;
-        margin-top: 11rem;
+        align-items: center;
+        
+        width: 100%;
+    
+      
+        
+       
+ 
+        
+        
+
+  
+   
+
+        .closeEmoji{
+            margin-top: 0.5rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
+
+        .emoji{
+            margin-top: 0.5rem;
+            margin-right: 0.5rem;
+            cursor: pointer;
+        }
         
 
         .input{
             background: var(--gray-100);
             height: 2.5rem;
             width: 100%;
+            
             border-radius: 10px;
+            
         
             padding: 0.3rem;
 
@@ -112,12 +129,13 @@
            
         }
     }
-   }
+   
 
 }
 
+
 .dark{
-    background: var(--gray-800);
+    background: var(--black);
     color: var(--snow);
 }
 
@@ -125,3 +143,4 @@
     background: var(--gray-300);
     color: var(--black);
 }
+

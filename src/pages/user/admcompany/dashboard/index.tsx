@@ -1,5 +1,5 @@
 import { AdmCompanyHeader } from "../../../../components/AdmCompanyHeader";
-import { AdmCompanyMenuOptions } from "../../../../components/CompaniesMenu/admCompanyMenu";
+
 import { AdmCompanySideBar } from "../../../../components/SideBar/admCompanysb";
 import { ThemeContext } from "../../../../context/ThemeContext";
 
@@ -18,12 +18,13 @@ export default function Dashboard(){
            <Head>
             <title>Adm Company | Dashboard</title>
            </Head>
+            <div className={`${styles.container} ${styles[theme]}`}>
+                <AdmCompanySideBar />
 
-        <div className={`${styles.container} ${styles[theme]}`}>
-        <AdmCompanySideBar />
-        <AdmCompanyMenuOptions />
-        <AdmCompanyHeader />
-        <AdmStatics />
+                
+                    <AdmCompanyHeader />
+                    <AdmStatics />
+                
         </div>
         </>
     )
