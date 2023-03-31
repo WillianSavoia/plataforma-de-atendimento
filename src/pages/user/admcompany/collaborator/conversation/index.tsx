@@ -3,9 +3,9 @@ import styles from './styles.module.scss'
 
 import {useContext} from 'react';
 
-import { AdmCompanySideBar } from '../../../../../components/SideBar/admCompanysb';
-import { AdmBoxMessages } from '../../../../../components/AdmBoxMessages';
-import { UserMessagesSideBar } from '../../../../../components/UserMessagesSideBar';
+import { AdmCompanySideBar } from '../../../../../components/AdmCompanyComponents/AdmCompanySideBar';
+import { AdmBoxMessages } from '../../../../../components/AdmCompanyComponents/AdmBoxMessages';
+import { UserMessagesSideBar } from '../../../../../components/AdmCompanyComponents/UserMessagesSideBar';
 import Head from 'next/head';
 
 

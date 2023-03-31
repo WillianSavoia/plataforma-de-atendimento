@@ -1,0 +1,137 @@
+.container{
+    position: fixed;
+    margin-left: 3.5rem;
+    height: 100%;
+    width: 17rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+    
+    padding: 2rem;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 6px;
+        
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: rgba(0, 0, 0, 0.2);
+        opacity: 20%;
+    }
+ 
+    
+    
+    span{
+        margin-left: 1rem;
+        font-weight: bold;
+        font-size: 1.12rem;
+    }
+
+    .division1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 2.6rem;
+        border-bottom: 1px solid;
+        height: 20%;
+
+        a{
+
+            color: var(--gray-50);
+            text-decoration: none;
+            transition: color 0.5s;
+            display: flex;
+            align-items: center;
+            margin-left: 0.5rem;
+            margin-top: 1.5rem;
+            height: 2rem;
+            
+
+            
+            
+           
+ 
+            
+            
+            &:hover{
+                color: var(--white);
+            }
+
+            &.active{
+                color: var(--cyan-500);
+              
+                
+              
+            }
+
+           
+            
+           }
+    }
+
+    .input{
+        background: var(--gray-100);
+        width: 15rem;
+        height: 2.5rem;
+        margin-top: 2rem;
+        margin-left: -1rem;
+        border-radius: 20px;
+        align-items: center;
+        display: flex;
+        transition: background .8s;
+     
+        &:hover{
+            background: var(--gray-50);
+        }
+
+
+        input{
+            border:0 none;
+            width: 8;
+            margin-left: 0.5rem;
+            height: 1.5rem;
+            box-shadow: 0 0 0 0;
+            outline: 0;
+            padding: 1rem;
+            background: var(--gray-100);
+            transition: background .8s;
+     
+            &:hover{
+                background: var(--gray-50);
+            }
+            
+            &::placeholder{
+                font-weight: bold;
+            }
+        }
+
+        .svg{
+           cursor: pointer;
+           color: var(--black);
+        }
+     
+    }
+
+    .division2{
+        margin-top: 2rem;
+        height: 100%;
+        
+
+
+        ul{
+            margin-top: 2rem;
+
+            li{
+                list-style: none;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+.light{
+    background: var(--gray-300);
+}
+
+.dark{
+    background: var(--gray-800);
+}

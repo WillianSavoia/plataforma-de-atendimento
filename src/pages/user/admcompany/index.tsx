@@ -1,5 +1,5 @@
-import { AdmCompanyHeader } from "../../../components/AdmCompanyHeader"
-import { AdmCompanySideBar } from "../../../components/SideBar/admCompanysb"
+import { AdmCompanyHeader } from "../../../components/AdmCompanyComponents/AdmCompanyHeader"
+import { AdmCompanySideBar } from "../../../components/AdmCompanyComponents/AdmCompanySideBar"
 import { ThemeContext } from "../../../context/ThemeContext"
 
 import {useContext} from 'react'

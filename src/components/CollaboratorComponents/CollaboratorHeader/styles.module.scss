@@ -1,0 +1,65 @@
+.header{
+    
+    height: 5rem;
+    align-items: center;
+    display: flex;
+    width: 100%;
+  
+
+  .account{
+    
+    display: flex;
+    margin-left: auto;
+
+    padding: 1rem;
+
+    .switch{
+      display: flex;
+      height: 3rem;
+      align-items: center;
+      
+    }
+
+    .information{
+      margin-left: 1rem;
+      margin-right: 1rem;
+
+
+      .name{
+        font-size: 1.1rem;
+        font-weight: bold;
+        
+      }
+
+      .email{
+        color: var(--gray-300);
+        font-size: 0.9rem;
+      }
+    }
+  
+  
+
+    .picture{
+      margin-left: auto;
+      display: flex;
+      
+      .avatar {
+        vertical-align: middle;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-left: auto;
+        margin-right: 1rem;
+      }
+    }
+  }
+}
+
+.dark{
+  background: var(--gray-900);
+  color: var(--snow);
+}
+
+.light{
+  background: var(--snow);
+}

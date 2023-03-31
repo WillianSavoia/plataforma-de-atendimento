@@ -1,13 +1,13 @@
-import { AdmCompanyHeader } from "../../../../components/AdmCompanyHeader";
+import { AdmCompanyHeader } from "../../../../components/AdmCompanyComponents/AdmCompanyHeader";
 
-import { AdmCompanySideBar } from "../../../../components/SideBar/admCompanysb";
+import { AdmCompanySideBar } from "../../../../components/AdmCompanyComponents/AdmCompanySideBar";
 import { ThemeContext } from "../../../../context/ThemeContext";
 
 import styles from './styles.module.scss'
 
 import {useContext} from 'react'
 import Head from "next/head";
-import { AdmStatics } from "../../../../components/AdmStatistics";
+import { AdmStatics } from "../../../../components/AdmCompanyComponents/AdmStatistics";
 
 export default function Dashboard(){
 

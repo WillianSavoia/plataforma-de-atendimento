@@ -1,11 +1,11 @@
-import { AdmOptionsMenu } from "../../../../../components/OptionsMenu/admOptions";
-import { AdmSideBar } from "../../../../../components/SideBar/admSidebar";
+import { AdmOptionsMenu } from "../../../../../components/AdmComponents/OptionsMenu/admOptions";
+import { AdmSideBar } from "../../../../../components/AdmComponents/AdmSideBar";
 import {FormEvent, useContext} from 'react';
 
 import styles from './styles.module.scss'
 import Link from "next/link";
 import { BiTrash } from "react-icons/bi";
-import { AdmHeader } from "../../../../../components/AdmHeader";
+import { AdmHeader } from "../../../../../components/AdmComponents/AdmHeader";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 
 import Head from "next/head";

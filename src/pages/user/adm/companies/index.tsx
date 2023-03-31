@@ -1,6 +1,6 @@
-import { AdmHeader } from "../../../../components/AdmHeader";
-import { AdmOptions } from "../../../../components/CompaniesMenu/admMenuOptions";
-import { AdmSideBar } from "../../../../components/SideBar/admSidebar";
+import { AdmHeader } from "../../../../components/AdmComponents/AdmHeader";
+import { AdmOptions } from "../../../../components/AdmComponents/CompaniesMenu/admMenuOptions";
+import { AdmSideBar } from "../../../../components/AdmComponents/AdmSideBar";
 
 import styles from './styles.module.scss'
 

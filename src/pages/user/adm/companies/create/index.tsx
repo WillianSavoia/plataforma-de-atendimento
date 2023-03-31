@@ -1,9 +1,9 @@
 
-import { IncludeCompanyForm } from "../../../../../components/includeCompanyForm";
-import { AdmOptions } from "../../../../../components/CompaniesMenu/admMenuOptions";
-import { AdmSideBar } from "../../../../../components/SideBar/admSidebar";
+import { IncludeCompanyForm } from "../../../../../components/AdmComponents/includeCompanyForm";
+import { AdmOptions } from "../../../../../components/AdmComponents/CompaniesMenu/admMenuOptions";
+import { AdmSideBar } from "../../../../../components/AdmComponents/AdmSideBar";
 import styles from './styles.module.scss'
-import { AdmHeader } from "../../../../../components/AdmHeader";
+import { AdmHeader } from "../../../../../components/AdmComponents/AdmHeader";
 import { useContext } from "react";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 

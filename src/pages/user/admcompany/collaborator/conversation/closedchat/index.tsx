@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { useContext } from 'react';
-import { AdmBoxMessages } from '../../../../../../components/AdmBoxMessages';
-import { AdmCompanySideBar } from '../../../../../../components/SideBar/admCompanysb';
-import { ClosedChatBoxMessages } from '../../../../../../components/UserMessagesSideBar/ClosedChatBoxMessages';
+import { AdmBoxMessages } from '../../../../../../components/AdmCompanyComponents/AdmBoxMessages';
+import { AdmCompanySideBar } from '../../../../../../components/AdmCompanyComponents/AdmCompanySideBar';
+import { ClosedChatBoxMessages } from '../../../../../../components/AdmCompanyComponents/UserMessagesSideBar/ClosedChatBoxMessages';
 import { ThemeContext } from '../../../../../../context/ThemeContext';
 import styles from './styles.module.scss';
 

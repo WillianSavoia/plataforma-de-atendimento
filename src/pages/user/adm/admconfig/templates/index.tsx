@@ -1,6 +1,6 @@
-import { AdmHeader } from "../../../../../components/AdmHeader";
-import { AdmOptionsMenu } from "../../../../../components/OptionsMenu/admOptions";
-import { AdmSideBar } from "../../../../../components/SideBar/admSidebar";
+import { AdmHeader } from "../../../../../components/AdmComponents/AdmHeader";
+import { AdmOptionsMenu } from "../../../../../components/AdmComponents/OptionsMenu/admOptions";
+import { AdmSideBar } from "../../../../../components/AdmComponents/AdmSideBar";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 import {useContext} from 'react'
 

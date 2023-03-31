@@ -5,9 +5,8 @@ import { ThemeContext } from "../../../../context/ThemeContext";
 import styles from './styles.module.scss'
 
 import Head from "next/head";
-import { AdmCompanySideBar } from "../../../../components/SideBar/admCompanysb";
-import { AdmCompanyMenuOptions } from "../../../../components/CompaniesMenu/admCompanyMenu";
-import { AdmCompanyHeader } from "../../../../components/AdmCompanyHeader";
+import { AdmCompanySideBar } from "../../../../components/AdmCompanyComponents/AdmCompanySideBar";
+import { AdmCompanyHeader } from "../../../../components/AdmCompanyComponents/AdmCompanyHeader";
 
 export default function PasswordConfig (){
 

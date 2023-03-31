@@ -1,8 +1,8 @@
-import { AdmSideBar } from "../../../components/SideBar/admSidebar";
-import { AdmHeader } from "../../../components/AdmHeader";
+import { AdmSideBar } from "../../../components/AdmComponents/AdmSideBar";
+import { AdmHeader } from "../../../components/AdmComponents/AdmHeader";
 
 import styles from './styles.module.scss'
-import { Overwiewl } from "../../../components/OverwiewAdm";
+import { Overwiewl } from "../../../components/AdmComponents/OverwiewAdm";
 import { useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
 

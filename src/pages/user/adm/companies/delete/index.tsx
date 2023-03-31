@@ -1,8 +1,8 @@
-import { DeleteCompanies } from "../../../../../components/DeleteCompany";
-import { AdmOptions } from "../../../../../components/CompaniesMenu/admMenuOptions";
-import { AdmSideBar } from "../../../../../components/SideBar/admSidebar";
+import { DeleteCompanies } from "../../../../../components/AdmComponents/DeleteCompany";
+import { AdmOptions } from "../../../../../components/AdmComponents/CompaniesMenu/admMenuOptions";
+import { AdmSideBar } from "../../../../../components/AdmComponents/AdmSideBar";
 import styles from './styles.module.scss'
-import { AdmHeader } from "../../../../../components/AdmHeader";
+import { AdmHeader } from "../../../../../components/AdmComponents/AdmHeader";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 import { useContext } from 'react'
 

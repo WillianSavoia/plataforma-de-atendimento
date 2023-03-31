@@ -1,0 +1,20 @@
+.chatBox1{
+    max-width: 40%;
+    padding: 1rem;
+    margin: 5px 40px 5px 5px;
+  
+   // background: #fff;
+    border-radius: 15px;
+    align-items: center; 
+              
+    }
+  
+   
+.dark {
+       background: var(--gray-800);
+       color: var(--snow);
+    }
+.light{
+    background: var(--gray-300);
+    color: var(--black);
+}
