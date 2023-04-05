@@ -2,6 +2,7 @@ import styles from './styles.module.scss'
 import {BiTrash} from 'react-icons/bi'
 import { ThemeContext } from '../../../context/ThemeContext'
 import {useContext} from 'react'
+import { ExcludeCompanyModal } from '../AdmModals/ExcludeCompanyModal'
 
 const empresas = [
     {nome: "Empresa 1"},
@@ -26,7 +27,7 @@ export function DeleteCompanies(){
           {empresas.map(empresas => (
             <>
             <nav className={styles.companiesList}>
-          <div><ul>{empresas.nome} <button><BiTrash size={25} color="#fff" /></button></ul></div>
+          <div><ul>{empresas.nome}</ul> <ExcludeCompanyModal /></div>
           </nav>
             </>
           ))

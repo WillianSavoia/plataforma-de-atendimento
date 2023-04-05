@@ -1,10 +1,24 @@
 .container{
-    height: 100vh;
+    height: 100%;
     width: 12rem;
     position: fixed;
     flex-direction: column;
     text-align: center;
     margin-left: 3.5rem;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 10px;
+        height: 6px;
+        
+    }
+
+    &::-webkit-scrollbar-thumb{
+        background: rgba(0, 0, 0, 0.2);
+        opacity: 20%;
+    }
  
    
 
@@ -29,6 +43,20 @@
   
     
 
+    .Input{
+        border-radius: 20px;
+        padding: .2rem;
+        padding-left: .6rem;
+        width: 90%;
+        margin-top: 5%;
+        background: var(--gray-50);
+        transition: background .5s;
+        border: none;
+
+        &:hover {
+            background: var(--gray-100);
+        }
+    }
 
     .content{
         margin-top: 4rem;
@@ -85,7 +113,7 @@
          }
 
          ul{
-            margin-top: 2rem;
+            margin-top: .5rem;
             font-family: "Fjalla One", sans-serif;
             font-size: 1rem;
 

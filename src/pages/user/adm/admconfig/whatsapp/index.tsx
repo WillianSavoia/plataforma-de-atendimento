@@ -7,6 +7,7 @@ import { ThemeContext } from "../../../../../context/ThemeContext";
 import Head from "next/head";
 
 import styles from './styles.module.scss'
+import { InputMaskTel } from "../../../../../components/AdmComponents/InputMaskTel";
 
 export default function WhatsAppConfig(){
 
@@ -18,6 +19,7 @@ export default function WhatsAppConfig(){
 
     return(
         <>
+        <div className={`${styles.container} ${styles[theme]}`}>
 
            <Head>
             <title>Config | Whatsapp</title>
@@ -25,16 +27,11 @@ export default function WhatsAppConfig(){
         <AdmSideBar />
         <AdmOptionsMenu />
         <AdmHeader />
-        <div className={`${styles.container} ${styles[theme]}`}>
             <div className={styles.content}>
               <form className={styles.whatsappform} onSubmit={handleSubmit}>
               <h1>Novo Cadastro</h1>
                 <span>Número</span>
-                <input 
-                type="tel" 
-                pattern="([0-9]{2})[9]{1}[0-9]{4}-[0-9]{4}" 
-                placeholder="(XX) XXXXX-XXXX"
-                required />
+                <InputMaskTel />
                 <span>Nome</span>
                 <input type="text" required />
                 <span>Sobrenome</span>

@@ -1,5 +1,5 @@
 import { useContext, useState } from 'react';
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../../../context/ThemeContext';
 
 import { AiOutlineCheckCircle } from 'react-icons/ai'
 import Modal from 'react-modal';

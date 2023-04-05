@@ -1,6 +1,7 @@
-import styles from './signin.module.scss'
+import styles from './styles.module.scss'
 import {FormEvent} from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 
 export default function SignInPage(){
 
@@ -11,7 +12,11 @@ export default function SignInPage(){
 
     return (
       <>
+      <Head>
+        <title>Plataforma | Login</title>
+      </Head>
       <div className={styles.container}>
+        <span className={styles.warning}>Não possui Conta? | <Link href="/register" className={styles.link}>Registre-se</Link></span>
       <div className={styles.title}>
         <h1>Plataforma de Atendimento</h1>
       </div>

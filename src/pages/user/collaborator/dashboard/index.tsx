@@ -14,7 +14,7 @@ export default function DashboardCollaborator(){
         <>
 
             <Head>
-                <title>Atendente |Dashboard</title>
+                <title>Atendente | Dashboard</title>
             </Head>
             <div className={`${styles.container} ${styles[theme]}`}>
                 <CollaboratorSideBar />

@@ -5,13 +5,17 @@ import { ThemeContext } from "../context/ThemeContext";
 import {useContext} from 'react';
 
 import styles from './styles.module.scss'
+import Head from "next/head";
 
 
 export default function Home() {
   const {theme} = useContext(ThemeContext)
   return (
     <>
-    <div className={theme}>
+    
+    <Head>
+      <title>Plataforma | Home</title>
+    </Head>
     <div className={styles.container}>
      <Header />
      <Carrousel />
@@ -19,7 +23,7 @@ export default function Home() {
     
 
      </div>
-    </div>
+    
     </>
   )
 }

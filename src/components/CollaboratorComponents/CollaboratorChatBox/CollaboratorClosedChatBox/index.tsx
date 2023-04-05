@@ -6,7 +6,7 @@ import { AdmCompanyHeader } from '../../../AdmCompanyComponents/AdmCompanyHeader
 
 import { useState } from 'react';
 
-import { UserInfoModal } from '../../../AdmCompanyModals/userInfoModal';
+import { CollaboratorUserInfoModal } from '../../CollaboratorModals/userInfoModal';
 import { CollaboratorMessages } from '../CollaboratorMessage';
 
 
@@ -227,7 +227,7 @@ export function CollaboratorClosedChatBox({user}: ChatBoxProps) {
            <div className={styles.chat}>
 
            <div className={styles.userHeader}>
-                <UserInfoModal />
+                <CollaboratorUserInfoModal />
 
             </div>
            

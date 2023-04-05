@@ -1,5 +1,5 @@
 import { DeleteCompanies } from "../../../../../components/AdmComponents/DeleteCompany";
-import { AdmOptions } from "../../../../../components/AdmComponents/CompaniesMenu/admMenuOptions";
+import { AdmOptions } from "../../../../../components/AdmComponents/CompaniesMenu";
 import { AdmSideBar } from "../../../../../components/AdmComponents/AdmSideBar";
 import styles from './styles.module.scss'
 import { AdmHeader } from "../../../../../components/AdmComponents/AdmHeader";

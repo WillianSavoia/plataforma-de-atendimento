@@ -1,7 +1,9 @@
 .container{
-    height: 6rem;
+    height: 100%;
     animation: animation 1s;
     display: flex;
+
+    background: var(--gray-900);
 
     
     
@@ -18,6 +20,7 @@
         .title{
             font-size: 1.5rem;
             font-family: "Fjalla One", sans-serif;
+            color: var(--snow);
         }
 
         .links{
@@ -29,7 +32,7 @@
             padding: 0.5rem;
             font-size: 1.2rem;
             font-family: "Fjalla One", sans-serif; 
-            color: var(--gray-500);
+            color: var(--snow);
             text-decoration: none;
             transition: color 0.5s;
 
@@ -40,11 +43,11 @@
             }
 
             &:hover{
-                color: var(--black);
+                color: var(--gray-500);
             }
 
             &.active{
-                color: var(--cyan-500);
+                color: var(--gold);
                 font-weight: bold;
                 padding: 0.5rem;
                 font-size: 1.2rem;

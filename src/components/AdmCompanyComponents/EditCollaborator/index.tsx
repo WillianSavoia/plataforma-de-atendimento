@@ -2,7 +2,7 @@ import styles from './styles.module.scss';
 
 import { useContext } from 'react'
 import { ThemeContext } from '../../../context/ThemeContext'
-import { EditCollaboratorModal } from '../../AdmCompanyModals/EditCollabModal';
+import { EditCollaboratorModal } from '../AdmCompanyModals/EditCollabModal';
 
 
 

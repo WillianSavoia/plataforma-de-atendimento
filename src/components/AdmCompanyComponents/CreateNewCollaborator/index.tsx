@@ -1,6 +1,9 @@
 import styles from './styles.module.scss'
 import {FormEvent, useContext} from 'react'
 import { ThemeContext } from '../../../context/ThemeContext'
+import { InputMaskRg } from '../InputMaskRg';
+import { InputMaskCpf } from '../InputMaskCpf';
+import { InputMaskCel } from '../InputMaskCel';
 
 export function CreateNewCollaboratorForm() {
 
@@ -30,11 +33,11 @@ export function CreateNewCollaboratorForm() {
             <div className={styles.elements}>
             <div>
             <span>RG</span>
-            <input type="tel" name="telefone" id="telefone" placeholder="00.000.000-0" />
+            <InputMaskRg />
             </div>
             <div>
             <span>CPF</span>
-            <input type="tel" name="CPF" id="CPF" placeholder="000.000.000-00" />
+            <InputMaskCpf />
             </div>
             </div>
             <div className={styles.elements}>
@@ -44,7 +47,7 @@ export function CreateNewCollaboratorForm() {
             </div>
             <div>
             <span>Celular</span>
-            <input type="tel" name="Telefone" id="Telefone" placeholder="(00) 90000-0000"/>
+            <InputMaskCel/>
             </div>
             </div>
             <button type="submit" className={styles.Button}>Enviar</button>

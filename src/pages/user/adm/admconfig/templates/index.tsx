@@ -14,6 +14,7 @@ export default function TemplatesConfig() {
     return (
         <>
 
+        <div className={`${styles.container} ${styles[theme]}`}>
            <Head>
             <title>Config | Templates</title>
            </Head>
@@ -21,9 +22,8 @@ export default function TemplatesConfig() {
             <AdmSideBar />
             <AdmOptionsMenu />
             <AdmHeader />
-            <div className={`${styles.container} ${styles[theme]}`}>
-                <h1>Configurar Templates</h1>
-            </div>
+                <h1 className={styles.title}>Configurar Templates</h1>
+        </div>
         </>
     )
 }

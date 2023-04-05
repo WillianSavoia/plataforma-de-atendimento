@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 
 import Modal from 'react-modal';
 import {useState, useContext} from 'react';
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../../../context/ThemeContext';
 
 export function InsertImageModal () {
 

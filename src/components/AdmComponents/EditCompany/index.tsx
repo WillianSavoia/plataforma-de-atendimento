@@ -1,7 +1,8 @@
-import { useContext } from 'react'
+import { useContext, useState } from 'react'
 import { ThemeContext } from '../../../context/ThemeContext';
 import { useDropDownMenu } from '../../../hooks/useDropDownMenu';
 import styles from './styles.module.scss'
+import { EditCompanyModal } from '../AdmModals/EditCompanyModal';
 
 const Empresas = [
     {
@@ -11,14 +12,16 @@ const Empresas = [
         rs: 'Emp 1',
         end: 'rua primeiro',
         num: '1',
+        id: 1
     },
-  /*  {
+    {
         nome: 'Empresa2',
         email: 'empresa2@empresa.com.br',
         cnpj: '00.000.000/0000-22',
         rs: 'Emp 2',
         end: 'rua segundo',
         num: '2',
+        id: 2
     },
     {
         nome: 'Empresa3',
@@ -27,6 +30,7 @@ const Empresas = [
         rs: 'Emp 3',
         end: 'rua terceiro',
         num: '3',
+        id: 3
     },
     {
         nome: 'Empresa4',
@@ -35,6 +39,7 @@ const Empresas = [
         rs: 'Emp 4',
         end: 'rua quarto',
         num: '4',
+        id: 4
     },
     {
         nome: 'Empresa5',
@@ -43,6 +48,7 @@ const Empresas = [
         rs: 'Emp 5',
         end: 'rua quint',
         num: '5',
+        id: 5
     },
     {
         nome: 'Empresa6',
@@ -51,6 +57,7 @@ const Empresas = [
         rs: 'Emp 6',
         end: 'rua sexto',
         num: '6',
+        id: 6
     },
     {
         nome: 'Empresa7',
@@ -59,6 +66,7 @@ const Empresas = [
         rs: 'Emp 7',
         end: 'rua sétimo',
         num: '7',
+        id: 7
     },
     {
         nome: 'Empresa8',
@@ -67,6 +75,7 @@ const Empresas = [
         rs: 'Emp 8',
         end: 'rua oitavo',
         num: '8',
+        id: 8
     },
     {
         nome: 'Empresa9',
@@ -75,6 +84,7 @@ const Empresas = [
         rs: 'Emp 9',
         end: 'rua nono',
         num: '9',
+        id: 9
     },
     {
         nome: 'Empresa10',
@@ -83,13 +93,16 @@ const Empresas = [
         rs: 'Emp 10',
         end: 'rua décimo',
         num: '10',
-    },*/
+        id: 10
+    },
 ]
 
 
 export function CompanyList (){
 
-   const {theme} = useContext(ThemeContext)
+   const {theme} = useContext(ThemeContext);
+
+   const [open, setOpen] = useState(false)
 
 
     return(
@@ -97,17 +110,12 @@ export function CompanyList (){
         <div className={`${styles.container} ${styles[theme]}`}>
          <h1>Empresas</h1>
           <nav className={styles.companyList}>
-            {Empresas.map(Empresas => (
-              
-                    <><ul>{Empresas.nome} </ul><div className={styles.content}>
-                    <li>Nome: {Empresas.nome}</li>
-                    <li>E-mail: {Empresas.email}</li>
-                    <li>CNPJ: {Empresas.cnpj}</li>
-                    <li>Razão Social: {Empresas.rs}</li>
-                    <li>Endereço: {Empresas.end}</li>
-                    <li>número: {Empresas.num}</li>
-                    <button>Editar</button>
-                </div></>
+            {Empresas.map((item, key) => (
+              <EditCompanyModal
+              key={key}
+              data={item}
+              />
+                
 
             ))}
             
@@ -119,4 +127,3 @@ export function CompanyList (){
     )
 }
 
-//CRIAR A LISTAGEM DE EMPRESAS PARA EDIÇÃO

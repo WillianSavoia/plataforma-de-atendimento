@@ -1,38 +1,42 @@
 import styles from './styles.module.scss';
 import { AiOutlineLeftCircle, AiOutlineRightCircle } from 'react-icons/ai'
 import { useContext, useState } from 'react';
-import { GetStaticProps } from 'next';
 import { ThemeContext } from '../../context/ThemeContext';
 
-type Post = {
-    title: string;
-    content: string;
-}
-
-interface CarrouselProps {
-    Content: Post[] | null
-}
 
 export function Carrousel (){
+    
     const {theme} = useContext(ThemeContext)
+
+    const [move, setMove] = useState(false)
         return (
         <>
         <div className={`${styles.carrousel} ${styles[theme]}`}>
         <div className={styles.moveArrows}>
-            <div className={styles.left}>
-            <AiOutlineLeftCircle size={30}/>
-            </div>
+            { move !== false &&
+                
+                <div className={styles.left}>
+            <AiOutlineLeftCircle size={30} onClick={() => setMove(false)}/>
+            </div>}
             <div className={styles.right}>
-            <AiOutlineRightCircle size={30} />
+            <AiOutlineRightCircle size={30} onClick={() => setMove(true)} />
             </div>
         </div>
         <div className={styles.content}>
         <h1>Plataforma de atendimento</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
-        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-        ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
-        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-        sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        { move === false && 
+
+            <p>Com objetivo de integrar uma plataforma de atendimento integrada com o whatsApp, foi desenvolvido com a mais
+            alta tecnologia, tento como objetivo simplificar a forma de usar, possuindo layout simples, mas funcional.
+            </p>
+
+        }
+
+        { move !== false && 
+            <p>Com recursos exclusivos, ela entrega confiabilidade e simplicidade para uma melhor experiência para usuários
+            e clientes.
+            </p>
+        }
         </div>
         
         
@@ -42,32 +46,3 @@ export function Carrousel (){
         </>
     )
 }
-
-export const getStaticProps: GetStaticProps = async () =>{
-    const carrouselContent =[
-        {Title: "Plataforma de atendimento",
-        Content:    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-        },
-        {Title: "Missão",
-        Content:    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-        },
-        {Title: "Objetivos",
-        Content:    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
-        }
-    ]
-
-    const content = carrouselContent.map(post =>{
-        return{
-        title: post.Title,
-        content: post.Content
-        }
-    })
-    return {
-        props: {
-            content
-        }
-    }
-        
-}
-
-//Terminar o Carrossel

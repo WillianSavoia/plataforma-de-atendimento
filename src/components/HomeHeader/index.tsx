@@ -6,14 +6,12 @@ import { SwitchInput } from '../SwitchMode';
 import styles from './styles.module.scss';
 
 export function Header(){
-  const {theme} = useContext(ThemeContext)
     return(
         <>
         <div>
-        <header className={`${styles.container} ${styles[theme]}`}>
+        <header className={styles.container}>
             <div className={styles.content}>
             <h1 className={styles.title}>Plataforma de Atendimento</h1>
-            <div><SwitchInput /></div>
               <div className={styles.links}>
               <ActiveLink activeClassName={styles.active} href="/">
                 <a>Home</a>

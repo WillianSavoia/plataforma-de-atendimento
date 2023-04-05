@@ -15,6 +15,7 @@ export default function WebhooksConfig () {
     return(
         <>
 
+           <div className={`${styles.container} ${styles[theme]}`}>
            <Head>
             <title>Config | Webhooks</title>
            </Head>
@@ -22,7 +23,6 @@ export default function WebhooksConfig () {
            <AdmSideBar />
            <AdmOptionsMenu />
            <AdmHeader />
-           <div className={`${styles.container} ${styles[theme]}`}>
             <div className={styles.content}>
             <h1>Configurar Webhooks</h1>
               <div className={styles.createWHbanner}>

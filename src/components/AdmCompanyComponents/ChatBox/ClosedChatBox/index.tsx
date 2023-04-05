@@ -7,7 +7,7 @@ import { Messages } from '../Messages';
 
 import { useState } from 'react';
 
-import { UserInfoModal } from '../../../AdmCompanyModals/userInfoModal';
+import { UserInfoModal } from '../../AdmCompanyModals/userInfoModal';
 
 
 interface ChatBoxProps{

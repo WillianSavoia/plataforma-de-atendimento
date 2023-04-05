@@ -20,6 +20,7 @@ export default function SubDomain () {
     return(
         <>
 
+        <div className={`${styles.container} ${styles[theme]}`}>
            <Head>
             <title>Config | Subdomínio</title>
            </Head>
@@ -27,7 +28,6 @@ export default function SubDomain () {
             <AdmSideBar />
             <AdmOptionsMenu />
             <AdmHeader />
-            <div className={`${styles.container} ${styles[theme]}`}>
                 <div className={styles.content}>
                     <h1>Configurar Subdomínio</h1>
                     <form className={styles.subdomain} onSubmit={handleSubmit}>

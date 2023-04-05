@@ -1,10 +1,9 @@
 import { ActiveLink } from '../../ActiveLink'
-import styles from './admMenu.module.scss'
-import {RiLockPasswordLine} from 'react-icons/ri'
+import styles from './styles.module.scss'
 import {FaUserMinus, FaUserEdit, FaWhatsapp, FaBuilding} from 'react-icons/fa'
 import {BsFillPersonPlusFill} from 'react-icons/bs'
 import { ThemeContext } from '../../../context/ThemeContext'
-import {useContext} from 'react'
+import {useContext, useState} from 'react'
 
 const empresas = [
     {nome: "Empresa 1"},
@@ -16,10 +15,18 @@ const empresas = [
     {nome: "Empresa 7"},
     {nome: "Empresa 8"},
     {nome: "Empresa 9"},
+    {nome: "Empresa 10"},
+    {nome: "Empresa 11"},
 ]
 
 export function AdmOptions(){
-   const {theme} = useContext(ThemeContext)
+   const {theme} = useContext(ThemeContext);
+
+   const [search, setSearch] = useState("");
+
+   const LowerSearch = search.toLowerCase();
+
+   const Filter = empresas.filter((empresa) =>empresa.nome.toLowerCase().includes(LowerSearch))
 
     return(
         <>
@@ -35,13 +42,22 @@ export function AdmOptions(){
        
            <span>EMPRESAS CADASTRADAS</span>
 
-           <ul>
-            {empresas.map(empresas => (
+           <input
+           type="text"
+           className={styles.Input}
+           placeholder='Pesquise uma empresa'
+           value={search}
+           onChange={(event) => setSearch(event.target.value)} />
+
+            {Filter.map((empresas) => (
                 <>
-                <li>{empresas.nome}</li>
+                    <ul>
+                        
+                            <li>{empresas.nome}</li>
+                        
+                    </ul>
                 </>
             ))}
-           </ul>
      
           
          

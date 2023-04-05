@@ -7,7 +7,7 @@ import {useContext, useState} from 'react';
 
 import { ThemeContext } from '../../../../context/ThemeContext';
 
-import { WaitingChatModal } from '../../../AdmCompanyModals/WaitingChatModal';
+import { CollaboratorWaitingChatModal } from '../../CollaboratorModals/WaintingChatModal';
 import { CollaboratorInactiveChat } from '../../CollaboratorChatBox/InactiveChat';
 import { CollaboratorClosedMessagesList } from './CollabClosedMessagesList';
 import { CollaboratorClosedChatBox } from '../../CollaboratorChatBox/CollaboratorClosedChatBox';
@@ -95,7 +95,7 @@ export function CollaboratorClosedChatBoxMessages({chatId}: UserMessagesSideBarP
                     <HiOutlineMagnifyingGlass size={20} className={styles.svg}/>
                     
                 </div>
-                  <div><WaitingChatModal /></div>
+                  <div><CollaboratorWaitingChatModal /></div>
                </div>
                 <div className={styles.messages}>
                    {Filter.map((item, key) =>(

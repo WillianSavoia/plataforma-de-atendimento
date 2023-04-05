@@ -7,7 +7,7 @@ import { HiOutlineMagnifyingGlass } from 'react-icons/hi2'
 import {useState, useContext} from 'react';
 import Modal from 'react-modal';
 
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../../../context/ThemeContext';
 import { AiOutlineClose } from 'react-icons/ai';
 
 

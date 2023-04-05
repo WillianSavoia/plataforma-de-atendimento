@@ -3,7 +3,7 @@ import styles from './styles.module.scss';
 
 import { useState, useContext } from 'react'
 import Modal from 'react-modal';
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../../../context/ThemeContext';
 
 export function InsertDocumentModal() {
 

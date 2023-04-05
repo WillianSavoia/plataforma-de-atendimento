@@ -6,7 +6,7 @@ import { ThemeContext } from '../../../context/ThemeContext';
 import { MessagesList } from './MessagesList';
 import { ChatBox } from '../ChatBox';
 import { InactiveChat } from '../ChatBox/InactiveChat';
-import { NewConversationModal } from '../../AdmCompanyModals/newConversationModal';
+import { NewConversationModal } from '../AdmCompanyModals/newConversationModal';
 
 
 interface UserMessagesSideBarProps{

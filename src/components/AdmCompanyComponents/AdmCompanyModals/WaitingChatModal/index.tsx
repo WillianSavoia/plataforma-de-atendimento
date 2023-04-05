@@ -6,7 +6,7 @@ import { FaUserClock } from 'react-icons/fa'
 import { useState, useContext } from 'react';
 import Modal from 'react-modal';
 
-import { ThemeContext } from '../../../context/ThemeContext';
+import { ThemeContext } from '../../../../context/ThemeContext';
 import { HiOutlineMagnifyingGlass } from 'react-icons/hi2';
 import { AiOutlineClose, AiOutlineCheckCircle } from 'react-icons/ai';
 import Link from 'next/link';

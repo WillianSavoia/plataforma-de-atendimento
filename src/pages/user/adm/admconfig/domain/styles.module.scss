@@ -1,10 +1,19 @@
 .container{
-    margin-left: 15.5rem;
-    height: 118vh;
+    height: 100%;
+    width: 100%;
     display: flex;
+    flex-direction: column;
 
+    overflow-y: auto;
+
+    
+
+    overflow-x: hidden;
+
+    
     .content{
-
+        
+        margin-left: 15.5rem;
         padding: 2.5rem;
         height: 55rem;
         animation: animationform 2s;

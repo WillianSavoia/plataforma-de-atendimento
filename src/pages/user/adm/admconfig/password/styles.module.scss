@@ -1,12 +1,18 @@
 .content{
-    margin-left: 15.5rem;
-    height: 100vh;
-    padding: 3rem;
-
    
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 
-    h1{
-        margin-left: 2rem;
+    overflow-y: auto;
+
+    
+
+    overflow-x: hidden;
+
+    .title{
+        margin-left: 17rem;
         animation: animationform 2s;
     }
 
@@ -17,6 +23,11 @@
         padding: 2rem;
         margin-top: 4rem;
         animation: animationform 2s;
+        margin-left: 15.5rem;
+
+        span{
+            color: var(--red);
+        }
 
         label{
             margin-bottom: 0.5rem;

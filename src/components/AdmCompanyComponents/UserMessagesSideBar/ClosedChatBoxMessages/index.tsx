@@ -9,7 +9,7 @@ import { ThemeContext } from '../../../../context/ThemeContext';
 import { InactiveChat } from '../../ChatBox/InactiveChat';
 import { ClosedMessagesList } from './ClosedMessagesList';
 import { ClosedChatBox } from '../../ChatBox/ClosedChatBox';
-import { WaitingChatModal } from '../../../AdmCompanyModals/WaitingChatModal';
+import { WaitingChatModal } from '../../AdmCompanyModals/WaitingChatModal';
 
 
 interface UserMessagesSideBarProps{

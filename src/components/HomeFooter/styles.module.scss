@@ -1,0 +1,40 @@
+ .container{
+    display: flex;
+    height: 8rem;
+    width: 100%;
+    background: var(--black);
+
+    .services{
+        display: flex;
+        width: 25%;
+        padding: 2.5rem;
+        text-align: left;
+        flex-direction: column;
+        
+        .link{
+            text-decoration: none;
+            margin-top: .5%;
+            transition: color .5s;
+            color: var(--snow);
+
+            &:hover{
+                color: var(--cyan-500);
+            }
+
+        }
+    }
+
+    .copyright{
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        font-weight: bold;
+        color: var(--snow);
+
+        span{
+            margin-top: 1%;
+        }
+    }
+ }

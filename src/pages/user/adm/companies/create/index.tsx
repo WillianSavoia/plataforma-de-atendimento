@@ -1,6 +1,6 @@
 
 import { IncludeCompanyForm } from "../../../../../components/AdmComponents/includeCompanyForm";
-import { AdmOptions } from "../../../../../components/AdmComponents/CompaniesMenu/admMenuOptions";
+import { AdmOptions } from "../../../../../components/AdmComponents/CompaniesMenu";
 import { AdmSideBar } from "../../../../../components/AdmComponents/AdmSideBar";
 import styles from './styles.module.scss'
 import { AdmHeader } from "../../../../../components/AdmComponents/AdmHeader";
@@ -15,11 +15,11 @@ export default function CompaniesPage(){
     return( 
         <>
 
+        <div className={`${styles.container} ${styles[theme]}`}>
            <Head>
             <title>Empresas | Cadastrar</title>
            </Head>
        
-        <div className={`${styles.container} ${styles[theme]}`}>
         <AdmHeader />
         <AdmSideBar />
         <AdmOptions />

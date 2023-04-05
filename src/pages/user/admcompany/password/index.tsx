@@ -1,4 +1,4 @@
-import { FormEvent, useContext } from "react";
+import { FormEvent, useContext, useState } from "react";
 
 import { ThemeContext } from "../../../../context/ThemeContext";
 
@@ -10,7 +10,15 @@ import { AdmCompanyHeader } from "../../../../components/AdmCompanyComponents/Ad
 
 export default function PasswordConfig (){
 
-  const {theme} = useContext(ThemeContext)
+  const [oldPassword, setOldPassword] = useState('');
+
+  const [newPassword, setNewPassword] = useState('');
+
+  const [confirmPassword, setConfirmPassword] = useState('');
+  
+  
+  const {theme} = useContext(ThemeContext);
+
    
     function handleSubmit(event: FormEvent){
        
@@ -34,12 +42,41 @@ export default function PasswordConfig (){
                 <h1>Alterar Senha</h1>
                   <form className={styles.passwordForm} onSubmit={handleSubmit}>
                     <label>Senha Atual</label>
-                    <input type="password" placeholder="Senha Atual" />
+                    <input 
+                    type="password" 
+                    placeholder="Senha Atual" 
+                    value={oldPassword}
+                    onChange={(ev) => setOldPassword(ev.target.value)}
+                    required
+                    />
+                    {oldPassword === newPassword &&
+                    <span
+                    style={{display: newPassword === '' ? 'none' : 'block'}}>A senha nova não pode ser igual a senha atual.</span>
+                      }
                     <label>Nova Senha</label>
-                    <input type="password" placeholder="Nova Senha" />
+                    <input 
+                    type="password" 
+                    placeholder="Nova Senha" 
+                    value={newPassword}
+                    onChange={(ev) => setNewPassword(ev.target.value)}
+                    required
+                    />
                     <label>Confirme sua Senha</label>
-                    <input type="password" placeholder="Confirmar Senha" />
-                    <button type="submit">Salvar</button>
+                    <input 
+                    type="password" 
+                    placeholder="Confirmar Senha"
+                    value={confirmPassword}
+                    onChange={(ev) => setConfirmPassword(ev.target.value)}
+                    required
+                    />
+                    {newPassword !== confirmPassword &&
+                    <span
+                    style={{display: confirmPassword === '' ? 'none' : 'block'}}>As senhas precisam ser iguais</span>
+                    }
+                    <button type="submit"
+                    style={{cursor: newPassword !== confirmPassword ? 'pointer' : 'not-allowed',
+                    opacity: newPassword !== confirmPassword ? '1' : '.5'}}
+                    >Salvar</button>
                 </form>
               </div>
            

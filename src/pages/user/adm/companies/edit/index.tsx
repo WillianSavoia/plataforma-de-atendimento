@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { CompanyList } from "../../../../../components/AdmComponents/EditCompany";
-import { AdmOptions } from "../../../../../components/AdmComponents/CompaniesMenu/admMenuOptions";
+import { AdmOptions } from "../../../../../components/AdmComponents/CompaniesMenu";
 import { AdmSideBar } from "../../../../../components/AdmComponents/AdmSideBar";
 import styles from './styles.module.scss'
 import { AdmHeader } from "../../../../../components/AdmComponents/AdmHeader";
@@ -15,15 +15,15 @@ export default function EditPage(){
     return( 
         <>
 
+        <div className={`${styles.container} ${styles[theme]}`}>
            <Head>
             <title>Empresas | Editar</title>
            </Head>
        
-        <div className={`${styles.container} ${styles[theme]}`}>
-        <AdmHeader />
-        <AdmSideBar />
-        <AdmOptions />
-        <CompanyList />
+            <AdmHeader />
+            <AdmSideBar />
+            <AdmOptions />
+            <CompanyList />
         </div>
         </>
         )

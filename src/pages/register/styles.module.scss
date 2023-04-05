@@ -1,0 +1,78 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    color: var(--snow);
+    animation: transitionAnimation .5s;
+
+    .account{
+        margin-left: auto;
+        margin-right: 5%;
+        color: var(--black);
+        margin-top: 1%;
+
+        .link{
+            text-decoration: none;
+            font-weight: bold;
+            color: var(--black);
+            transition: color .5s;
+
+            &:hover{
+                color: var(--cyan-500);
+            }
+        }
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        background: var(--gray-800);
+        height: 65%;
+        width: 30%;
+        margin-left: 35%;
+        margin-top: 5%;
+        padding: 2rem;
+        border-radius: 20px;
+
+
+        input{
+            margin-top: 1%;
+            height: 2.5rem;
+            border-radius: 10px;
+            background: var(--gray-50);
+            transition: background .5s;
+            padding-left: 1rem;
+
+            &:hover{
+                background: var(--gray-100);
+            }
+        }
+
+        button{
+            margin-top: 5%;
+            height: 2.5rem;
+            border-radius: 10px;
+            cursor: pointer;
+            background: var(--gray-50);
+            transition: background .5s;
+
+            &:hover{
+                background: var(--gray-100);
+            }
+        }
+        
+        .warning{
+            margin-top: 5%;
+        }
+    }
+    
+}
+
+@keyframes transitionAnimation {
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}

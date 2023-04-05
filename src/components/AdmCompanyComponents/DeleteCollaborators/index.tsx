@@ -1,6 +1,6 @@
 import { useContext } from "react"
 import { ThemeContext } from "../../../context/ThemeContext"
-import { DeleteCollaboratorModal } from "../../AdmCompanyModals/DeleteCollabModal"
+import { DeleteCollaboratorModal } from "../AdmCompanyModals/DeleteCollabModal"
 
 import styles from './styles.module.scss'
 
