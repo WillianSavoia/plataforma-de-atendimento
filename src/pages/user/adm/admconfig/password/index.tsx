@@ -7,6 +7,7 @@ import { ThemeContext } from "../../../../../context/ThemeContext";
 import styles from './styles.module.scss'
 
 import Head from "next/head";
+import { AdmOptionsResponsiveMenu } from "../../../../../components/AdmComponents/OptionsMenu/OptionsResponsiveMenu";
 
 export default function PasswordConfig (){
 
@@ -26,13 +27,14 @@ export default function PasswordConfig (){
         <>
 
           <div className={`${styles.content} ${styles[theme]}`}>
+
+          <AdmSideBar />
+          <AdmHeader />
+          <AdmOptionsResponsiveMenu />
+          <AdmOptionsMenu />
            <Head>
             <title>Config | Alterar senha</title>
            </Head>
-
-          <AdmSideBar />
-          <AdmOptionsMenu />
-          <AdmHeader />
 
             <h1 className={styles.title}>Alterar Senha</h1>
             <form className={styles.passwordForm} onSubmit={handleSubmit}>
@@ -71,8 +73,7 @@ export default function PasswordConfig (){
                 }}>As senhas não batem.</span>
                 }
                 <button
-                style={{cursor: newPassword !== confirmPassword ? 'pointer' : 'not-allowed',
-                opacity: newPassword !== confirmPassword ? '1' : '.5'}}
+                style={{cursor: newPassword !== confirmPassword ? 'pointer' : 'not-allowed',}}
                 type="submit">Salvar</button>
             </form>
           </div>

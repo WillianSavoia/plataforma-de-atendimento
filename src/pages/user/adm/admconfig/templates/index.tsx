@@ -7,6 +7,7 @@ import {useContext} from 'react'
 import Head from "next/head";
 
 import styles from './styles.module.scss'
+import { AdmOptionsResponsiveMenu } from "../../../../../components/AdmComponents/OptionsMenu/OptionsResponsiveMenu";
 
 export default function TemplatesConfig() {
    const {theme} = useContext(ThemeContext)
@@ -22,6 +23,7 @@ export default function TemplatesConfig() {
             <AdmSideBar />
             <AdmOptionsMenu />
             <AdmHeader />
+            <AdmOptionsResponsiveMenu />
                 <h1 className={styles.title}>Configurar Templates</h1>
         </div>
         </>

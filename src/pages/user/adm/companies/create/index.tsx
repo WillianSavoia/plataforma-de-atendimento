@@ -8,6 +8,8 @@ import { useContext } from "react";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 
 import Head from "next/head";
+import { FiMenu } from "react-icons/fi";
+import { ResponsiveMenu } from "../../../../../components/AdmComponents/CompaniesMenu/ResponsiveMenu";
 
 export default function CompaniesPage(){
     const {theme} = useContext(ThemeContext)
@@ -15,12 +17,14 @@ export default function CompaniesPage(){
     return( 
         <>
 
-        <div className={`${styles.container} ${styles[theme]}`}>
            <Head>
             <title>Empresas | Cadastrar</title>
            </Head>
+        <div className={`${styles.container} ${styles[theme]}`}>
        
         <AdmHeader />
+        <ResponsiveMenu/>
+        
         <AdmSideBar />
         <AdmOptions />
         <IncludeCompanyForm />

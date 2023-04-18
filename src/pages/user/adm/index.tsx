@@ -7,6 +7,7 @@ import { useContext } from "react";
 import { ThemeContext } from "../../../context/ThemeContext";
 
 import Head from "next/head";
+import { AdmSideBarResponsive } from "../../../components/AdmComponents/AdmSideBar/AdmSideBarResponsive";
 
 export default function AdmPage(){
    const {theme} = useContext(ThemeContext)
@@ -19,7 +20,7 @@ export default function AdmPage(){
            </Head>
         
         <div className={`${styles.container} ${styles[theme]}` }>
-        <AdmSideBar />
+        <AdmSideBarResponsive />
         <AdmHeader />
         <Overwiewl />
         </div>

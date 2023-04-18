@@ -24,6 +24,7 @@ export function ExcludeCompanyModal() {
         onRequestClose={() => setIsOpen(false)}
         contentLabel='Excluir cia'
         className={`${styles.modal} ${styles[theme]}`}
+        ariaHideApp={false}
         >
             <h2>Tem certeza?</h2>
             <span>A ação não poderá ser desfeita.</span>

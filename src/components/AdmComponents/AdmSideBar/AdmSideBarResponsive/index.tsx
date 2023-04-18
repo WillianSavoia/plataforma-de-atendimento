@@ -1,15 +1,15 @@
-import { ActiveLink } from '../../ActiveLink'
+import { ActiveLink } from '../../../ActiveLink'
 import styles from './styles.module.scss'
 import {FaBuilding} from 'react-icons/fa'
 import {BsGear} from 'react-icons/bs'
 import Link  from 'next/link'
 import { useContext } from 'react'
-import { ThemeContext } from '../../../context/ThemeContext'
+import { ThemeContext } from '../../../../context/ThemeContext'
 
 
 
 
-export function AdmSideBar(){
+export function AdmSideBarResponsive(){
 
    
 

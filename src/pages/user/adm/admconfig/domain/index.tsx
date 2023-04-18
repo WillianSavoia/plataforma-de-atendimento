@@ -9,6 +9,7 @@ import { AdmHeader } from "../../../../../components/AdmComponents/AdmHeader";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 
 import Head from "next/head";
+import { AdmOptionsResponsiveMenu } from "../../../../../components/AdmComponents/OptionsMenu/OptionsResponsiveMenu";
 
 export default function SubDomain () {
     const {theme} = useContext(ThemeContext)
@@ -26,8 +27,9 @@ export default function SubDomain () {
            </Head>
 
             <AdmSideBar />
-            <AdmOptionsMenu />
             <AdmHeader />
+            <AdmOptionsMenu />
+            <AdmOptionsResponsiveMenu />
                 <div className={styles.content}>
                     <h1>Configurar Subdomínio</h1>
                     <form className={styles.subdomain} onSubmit={handleSubmit}>
@@ -47,16 +49,16 @@ export default function SubDomain () {
                         <h2>Subdomínios Cadastrados</h2>
                         <ul>
                             <li>
-                                <Link href="#" className={styles.link}>subdomínio.dominio1.com.br</Link> 
-                                <button className={styles.fButton}><BiTrash size={25} color="#a8a8b3" /></button>
+                                <Link href="#" className={`${styles.link} ${styles[theme]}`}>subdomínio.dominio1.com.br</Link> 
+                                <BiTrash size={25} className={styles.svg}/>
                             </li>
                             <li>
-                                <Link href="#" className={styles.link}>subdomínio.dominio2.com.br</Link>
-                                <button><BiTrash size={25} color="#a8a8b3" /></button>
+                                <Link href="#" className={`${styles.link} ${styles[theme]}`}>subdomínio.dominio2.com.br</Link>
+                                <BiTrash size={25} className={styles.svg}/>
                             </li>
                             <li>
-                                <Link href="#" className={styles.link}>subdomínio.dominio3.com.br</Link>
-                                <button><BiTrash size={25} color="#a8a8b3" /></button>
+                                <Link href="#" className={`${styles.link} ${styles[theme]}`}>subdomínio.dominio3.com.br</Link>
+                                <BiTrash size={25} className={styles.svg}/>
                             </li>
                         </ul>
                     </div>

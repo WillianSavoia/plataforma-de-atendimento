@@ -7,6 +7,7 @@ import { AdmHeader } from "../../../../../components/AdmComponents/AdmHeader";
 import { ThemeContext } from "../../../../../context/ThemeContext";
 
 import Head from "next/head";
+import { ResponsiveMenu } from "../../../../../components/AdmComponents/CompaniesMenu/ResponsiveMenu";
 
 export default function EditPage(){
     const {theme} = useContext(ThemeContext)
@@ -21,6 +22,7 @@ export default function EditPage(){
            </Head>
        
             <AdmHeader />
+            <ResponsiveMenu />
             <AdmSideBar />
             <AdmOptions />
             <CompanyList />

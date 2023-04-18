@@ -1,6 +1,6 @@
 .content{
    
-    height: 100%;
+    height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -81,4 +81,31 @@
     to{
         opacity: 1;
     }
+}
+
+@media screen and (max-device-width: 1401px) {
+    .content{
+        .title{
+            margin-left: 1rem;
+        }
+
+        .passwordForm{
+            margin-left: 1rem;
+            margin-bottom: 50%;
+
+            
+        }
+    }
+    
+}
+
+@media screen and (max-device-width: 517px) {
+    .content{
+        .passwordForm{
+            input{
+                width: 90%;
+            }
+        }
+    }
+    
 }

@@ -6,6 +6,7 @@ import {useContext} from 'react';
 
 import styles from './styles.module.scss'
 import Head from "next/head";
+import { HomeFooter } from "../components/HomeFooter";
 
 
 export default function Home() {
@@ -23,6 +24,7 @@ export default function Home() {
     
 
      </div>
+     <HomeFooter />
     
     </>
   )

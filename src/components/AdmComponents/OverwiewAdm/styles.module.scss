@@ -1,6 +1,7 @@
 .container{
     margin-left: 3.5rem;
-    height: 100vh;
+    height: 100%;
+    width: 100%;
     animation: containerAnimation 3s;
     
   
@@ -15,15 +16,16 @@
     .content{
         padding: 3rem;
         display: flex;
-        
         flex-direction: column;
+        
+        
         
         
 
         .statistics{
             display: flex;
             padding: 1rem;
-            margin-left: 2rem;
+            
 
         
 
@@ -32,7 +34,7 @@
             margin-left: 1rem;
             flex-direction: column;
             border-radius: 10px ;
-            width: 23rem;
+            width: 100%;
             height: 13rem;
             padding: 1rem;
             text-align: center;
@@ -69,7 +71,7 @@
             margin-left: 1rem;
             flex-direction: column;
             border-radius: 10px ;
-            width: 23rem;
+            width: 100%;
             height: 13rem;
             padding: 1rem;
             text-align: center;
@@ -105,7 +107,7 @@
             margin-left: 1rem;
             flex-direction: column;
             border-radius: 10px ;
-            width: 23rem;
+            width: 100%;
             height: 13rem;
             padding: 1rem;
             text-align: center;
@@ -141,7 +143,7 @@
             margin-left: 1rem;
             flex-direction: column;
             border-radius: 10px ;
-            width: 23rem;
+            width: 100%;
             height: 13rem;
             padding: 1rem;
             text-align: center;
@@ -205,4 +207,23 @@
         opacity: 1;
     }
     
+}
+
+@media screen and (max-device-width: 1430px) {
+  .container{
+
+    margin-left: 1rem;
+    .content{
+
+        .statistics{
+            flex-direction: column;
+            width: 90%;
+    
+            padding: 0;
+        
+            
+            
+        }
+    }
+  }
 }

@@ -5,6 +5,7 @@ import styles from './styles.module.scss';
 import { useState } from "react";
 import { HiMagnifyingGlass } from "react-icons/hi2";
 import { CompanyClientsModal } from "../../components/Modals/ComapanyClientsModal";
+import { HomeFooter } from "../../components/HomeFooter";
 
 export default function Clients(){
 
@@ -74,6 +75,7 @@ export default function Clients(){
             </div>
             
         </div>
+        <HomeFooter />
         </>
     )
 }

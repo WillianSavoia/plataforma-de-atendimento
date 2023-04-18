@@ -48,6 +48,7 @@ export function EditCompanyModal ({data}: EditCompanyModalProps) {
         onRequestClose={() => setIsOpen(false)}
         contentLabel='Edit Company'
         className={`${styles.modal} ${styles[theme]}`}
+        ariaHideApp={false}
         >
             <AiOutlineClose 
             size={20}

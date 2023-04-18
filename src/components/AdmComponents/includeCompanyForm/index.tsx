@@ -1,46 +1,46 @@
 import styles from './styles.module.scss'
-import {FormEvent, useContext} from 'react'
-import { ThemeContext } from '../../../context/ThemeContext'
+import {FormEvent} from 'react'
+
 import { InputMaskCnpj } from '../InputMaskCnpj';
 
 export function IncludeCompanyForm() {
 
-    const {theme} = useContext(ThemeContext);
+    
     
     function handleSubmit(event: FormEvent){
         event.preventDefault()
     }
     return(
         <>
-            <div className={`${styles.form} ${styles[theme]}`}>
+            <div className={styles.form}>
                 <h1>Insira os dados Abaixo</h1>
                 <form className={styles.formulary} onClick={handleSubmit}>
                 <div className={styles.elements}>
-                    <div>
-                <span>Nome</span>
-                <input type="name" />
+                    <div className={styles.divisions}>
+                        <span>Nome</span>
+                        <input type="name" />
                     </div>
-                    <div>
+                    <div className={styles.divisions}>
                         <span>E-mail</span>
                         <input type="email" name="E-mail" id="E-mail" />
                     </div>
-                    </div>
+                    </div >
                         <div className={styles.elements}>
-                    <div>
+                    <div className={styles.divisions}>
                         <span>CNPJ</span>
                         <InputMaskCnpj />
                     </div>
-                    <div>
+                    <div className={styles.divisions}>
                         <span>Razão Social</span>
                         <input type="text" />
                     </div>
                     </div>
                     <div className={styles.elements}>
-                    <div>
+                    <div className={styles.divisions}>
                         <span>Endereço</span>
                         <input type="text" name="Endereço" id="Endereço" />
                     </div>
-                    <div>
+                    <div className={styles.divisions}>
                         <span>Número</span>
                         <input type="text" name="Address-number" id="Address-number" className={styles.addressNumber}/>
                     </div>

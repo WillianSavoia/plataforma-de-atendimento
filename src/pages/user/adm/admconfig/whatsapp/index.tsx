@@ -8,6 +8,7 @@ import Head from "next/head";
 
 import styles from './styles.module.scss'
 import { InputMaskTel } from "../../../../../components/AdmComponents/InputMaskTel";
+import { AdmOptionsResponsiveMenu } from "../../../../../components/AdmComponents/OptionsMenu/OptionsResponsiveMenu";
 
 export default function WhatsAppConfig(){
 
@@ -25,8 +26,9 @@ export default function WhatsAppConfig(){
             <title>Config | Whatsapp</title>
            </Head>
         <AdmSideBar />
-        <AdmOptionsMenu />
         <AdmHeader />
+        <AdmOptionsResponsiveMenu />
+        <AdmOptionsMenu />
             <div className={styles.content}>
               <form className={styles.whatsappform} onSubmit={handleSubmit}>
               <h1>Novo Cadastro</h1>

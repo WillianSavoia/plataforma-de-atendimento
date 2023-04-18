@@ -5,6 +5,7 @@ import { Header } from "../../components/HomeHeader";
 import styles from './styles.module.scss'
 import { FormEvent } from "react";
 import Head from "next/head";
+import { HomeFooter } from "../../components/HomeFooter";
 
 export default function register(){
 
@@ -42,6 +43,7 @@ export default function register(){
 
             </form>
         </div>
+        <HomeFooter />
         </>
     )
 }

@@ -8,6 +8,7 @@ import styles from './styles.module.scss'
 import { ThemeContext } from "../../../../../context/ThemeContext";
 
 import Head from "next/head";
+import { AdmOptionsResponsiveMenu } from "../../../../../components/AdmComponents/OptionsMenu/OptionsResponsiveMenu";
 
 export default function WebhooksConfig () {
   const {theme} = useContext(ThemeContext)
@@ -23,6 +24,7 @@ export default function WebhooksConfig () {
            <AdmSideBar />
            <AdmOptionsMenu />
            <AdmHeader />
+           <AdmOptionsResponsiveMenu />
             <div className={styles.content}>
             <h1>Configurar Webhooks</h1>
               <div className={styles.createWHbanner}>

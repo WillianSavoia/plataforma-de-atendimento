@@ -7,6 +7,7 @@ import { ThemeContext } from "../../../../../context/ThemeContext";
 import { useContext } from 'react'
 
 import Head from "next/head";
+import { ResponsiveMenu } from "../../../../../components/AdmComponents/CompaniesMenu/ResponsiveMenu";
 
 export default function DeletePage(){
 
@@ -19,12 +20,13 @@ export default function DeletePage(){
             <title>Empresas | Deletar</title>
            </Head>
        
-        <div className={`${styles.container} ${styles[theme]}`}>
-        <AdmHeader />
-        <AdmSideBar />
-        <AdmOptions />
-        <DeleteCompanies />
-        </div>
+            <div className={`${styles.container} ${styles[theme]}`}>
+                <AdmHeader />
+                <ResponsiveMenu />
+                <AdmSideBar />  
+                <AdmOptions />
+                <DeleteCompanies />
+            </div>
         </>
         )
 }

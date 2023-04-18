@@ -4,25 +4,27 @@
     align-items: center;
     display: flex;
     width: 100%;
-  
-
-  .account{
     
-    display: flex;
-    margin-left: auto;
-    margin-right: 5rem;
-    padding: 1rem;
+    
+    .account{
+      
+      
+      display: flex;
+      margin-left: auto;
+      margin-right: 5rem;
+      padding: 1rem;
 
     .switch{
       display: flex;
       height: 3rem;
       align-items: center;
-      margin-left: 56rem;
+      
     }
 
     .information{
       margin-left: 1rem;
       margin-right: 1rem;
+      cursor: pointer;
 
 
       .name{
@@ -40,7 +42,7 @@
   
 
     .picture{
-      margin-left: auto;
+      
       display: flex;
       
       .avatar {
@@ -55,13 +57,93 @@
   }
 }
 
+.boxInfo{
+  
+  margin-left: auto;
+  margin-right: 5%;
+  padding: 1rem;
+  opacity: .8;
+  flex-direction: column;
+  background: var(--primary);
+  border-radius: 20px;
+  animation: boxInfoAnimation .8s;
+
+  .svg{
+    margin-left: auto;
+    cursor: pointer;
+    transition: color .5s;
+
+    &:hover{
+      color: var(--cyan-500);
+    }
+  }
+
+    .info{
+       .name{
+        font-weight: bold;  
+       }
+    }
+
+    .links{
+      .link{
+        text-decoration: none;
+        font-weight: bold;
+        
+      }
+      .link2{
+        text-decoration: none;
+        font-weight: bold;
+        margin-left: 3%;
+      }
+    }
+}
+
 .dark{
-  background: var(--gray-900);
+ 
   color: var(--snow);
 }
 
 .light{
-  background: var(--snow);
+  color: var(--black);
+
+}
+
+@keyframes boxInfoAnimation {
+  from{
+    opacity: 0;
+  }
+
+  to{
+    opacity: .8;
+  }
 }
 
 
+@media only screen and (max-device-width: 517px) {
+
+  .header{
+
+    height: 100%;
+    flex-direction: column;
+
+    .account{
+
+      
+    .information{
+
+
+
+      .name{
+        font-size: .9rem;
+      }
+  
+      .email{
+        font-size: .5rem;
+      }
+    }
+  
+    }
+  }
+  
+  
+}

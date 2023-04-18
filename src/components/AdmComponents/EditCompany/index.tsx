@@ -102,7 +102,6 @@ export function CompanyList (){
 
    const {theme} = useContext(ThemeContext);
 
-   const [open, setOpen] = useState(false)
 
 
     return(

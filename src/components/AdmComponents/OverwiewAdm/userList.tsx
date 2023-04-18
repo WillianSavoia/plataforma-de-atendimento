@@ -60,10 +60,10 @@ export function UserList() {
     return (
         <>
         <div className={styles.container}>
-            {users.map(users => (
+            {users.map((users, key) => (
                 <>
                 <li className={`${styles[theme]}`}>
-                    <Link href="#" className={styles.users}>{users.usuário}</Link>
+                    <Link href="#" key={key} className={styles.users}>{users.usuário}</Link>
                     <span >{users.empresa}</span>
                     <span >{users.whatsApp}</span>
                 </li>

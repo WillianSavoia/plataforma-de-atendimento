@@ -25,3 +25,11 @@
     background: var(--snow);
     color: var(--black);
 }
+
+@media screen and (max-device-width: 1401px) {
+    .container{
+        .title{
+            margin-left: 1rem;
+        }
+    }
+}

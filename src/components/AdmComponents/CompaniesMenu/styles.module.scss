@@ -1,6 +1,6 @@
 .container{
     height: 100%;
-    width: 12rem;
+    width: 15%;
     position: fixed;
     flex-direction: column;
     text-align: center;
@@ -147,6 +147,62 @@
 }
 }
 
+.container2{
+    display: none;
+
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    margin-left: 3.5rem;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    .content{
+        margin-top: 4rem;
+        
+    
+
+        a{
+
+            font-size: 1rem;
+            font-family: "Fjalla One", sans-serif; 
+            color: var(--gray-100);
+            text-decoration: none;
+            transition: color 0.5s;
+            padding: 0.5rem;
+            display: flex;
+            align-items: center;
+            margin-left: 1rem;
+
+            
+            
+           
+ 
+            div{
+                margin-right: 0.6rem;
+            }
+            
+            &:hover{
+                color: var(--white);
+            }
+
+            &.active{
+                color: var(--cyan-500);
+                font-weight: bold;
+                font-size: 1rem;
+                font-family: "Fjalla One", sans-serif;
+                text-decoration: none;
+            }
+            
+           }
+
+}
+    
+}
+
 .dark{
     background: var(--gray-800);
     color: var(--snow);
@@ -157,3 +213,13 @@
     color: var(--black);
 }
 
+@media screen and (max-device-width: 1402px) {
+    .container{
+        display: none;
+    }
+
+    .container2{
+        display: none;
+    }
+    
+}
